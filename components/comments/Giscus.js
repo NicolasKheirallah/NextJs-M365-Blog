@@ -11,7 +11,7 @@ const Giscus = () => {
       ? theme === 'dark' || resolvedTheme === 'dark'
         ? siteMetadata.comment.giscusConfig.darkTheme
         : siteMetadata.comment.giscusConfig.theme
-      : siteMetadata.comment.giscusConfig.themeURL
+      : siteMetadata.comment.giscusConfig.themeURL ?? undefined
 
   const COMMENTS_ID = 'comments-container'
 
@@ -28,7 +28,7 @@ const Giscus = () => {
       metadata,
       inputPosition,
       lang,
-    } = siteMetadata?.comment?.giscusConfig
+    } = siteMetadata?.comment?.giscusConfig ?? undefined
 
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'
