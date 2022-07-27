@@ -6,7 +6,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://yourmodernworkplace.com/',
-  siteRepo: 'https://yourmodernworkplace.com/',
+  siteRepo: 'https://github.com/NicolasKheirallah/NextJs-M365-Blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
