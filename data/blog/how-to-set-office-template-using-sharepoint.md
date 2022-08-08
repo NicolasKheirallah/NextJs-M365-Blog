@@ -73,7 +73,7 @@ $everyoneExceptExternal = Get-PnPUser| ? Title -eq "Everyone except external use
 Set-PnPListPermission -Identity $GetTemplateDoc.Title -User $everyoneExceptExternal.LoginName -AddRole 'read'
 ```
 
-![](../assets/assets.png 'Assets lib')
+![Assets lib](../assets/assets.png)
 
 So what now?
 

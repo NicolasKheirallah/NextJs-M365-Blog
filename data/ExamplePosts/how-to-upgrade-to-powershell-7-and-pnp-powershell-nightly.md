@@ -19,13 +19,13 @@ Well first we need to download the package for PowerShell 7 from their github:,
 
 Download the PowerShell-7.X.X-XXX-win-x64.msi Just to make it easier to install :)
 
-![](../assets/powershell-install-1.png)
+![Assets lib](../assets/powershell-install-1.png)
 
-![](../assets/powershell-install..png)
+![Assets lib](../assets/powershell-install..png)
 
 After this let's start PowerShell 7 and build the new PnP Module! :D
 
-![](../assets/powershell-7.png)
+![Assets lib](../assets/powershell-7.png)
 
 Let's download the PnP powershell from their github:
 
@@ -39,7 +39,7 @@ Start PowerShell 7 and run this line of code:
  Install-Module -Name "PnP.PowerShell" -AllowPrerelease  -AllowClobber
 ```
 
-![](../assets/install-pnppowershell.png)
+![Assets lib](../assets/install-pnppowershell.png)
 
 Now that PnP powershell is installed, we need to configure it to authenticate with Azure/M365
 
@@ -51,9 +51,9 @@ Run:
  Register-PnPManagementShellAccess
 ```
 
-![](../assets/loginpromt.png)
+![Assets lib](../assets/loginpromt.png)
 
-![](../assets/permissions-pnp.png)
+![Assets lib](../assets/permissions-pnp.png)
 
 Accept the permissions and then you can start using your PnP powershell as usual :)
 
