@@ -1,8 +1,10 @@
 ---
-date: 2021-01-23T21:51:21.726Z
+date: '2021-01-23T21:51:21.726Z'
 title: How to running PnP Powershell on Linux
 description: is running PnP Powershell usable on linux?
-category: Powershell
+tags: ['Powershell', 'guide']
+summary: How to running PnP Powershell on Linux
+authors: ['default']
 ---
 
 Last post we went through how to install Powershell and PnP on linux, in this post we are going make it easier to use :)

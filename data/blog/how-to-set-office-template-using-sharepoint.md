@@ -1,8 +1,10 @@
 ---
-date: 2021-01-11T07:20:18.207Z
+date: '2021-01-11T07:20:18.207Z'
 title: How to set Office template using SharePoint
 description: Set and manage your organization default template
-category: Microsoft 365
+tags: ['M365', SharePoint, 'Guide']
+summary: How to set Office template using SharePoint
+authors: ['default']
 ---
 
 Hi!
