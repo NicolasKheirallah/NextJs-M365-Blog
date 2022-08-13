@@ -27,7 +27,7 @@ After this let's start PowerShell 7 and build the new PnP Module! :D
 
 Let's download the PnP powershell from their github:
 
-https://github.com/pnp/powershell
+[Github](https://github.com/pnp/powershell)
 
 To make it easy for us let's just download from releases using github, this way I can use git to fetch new changes and build the module :)
 
@@ -55,8 +55,6 @@ Run:
 
 Accept the permissions and then you can start using your PnP powershell as usual :)
 
-<!--EndFragment-->
-
 Resource:
 
-https://pnp.github.io/powershell/index.html
+[Github](https://pnp.github.io/powershell/index.html)
