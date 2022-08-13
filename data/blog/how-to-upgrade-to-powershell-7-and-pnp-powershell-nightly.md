@@ -13,9 +13,7 @@ So what's needed ?
 
 Well first we need to download the package for PowerShell 7 from their github:,
 
-<https://github.com/PowerShell/PowerShell/releases/>
-
-[https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.](<[](https://github.com/PowerShell/PowerShell/releases/)https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1>)
+[Github](https://github.com/PowerShell/PowerShell/releases/)
 
 Download the PowerShell-7.X.X-XXX-win-x64.msi Just to make it easier to install :)
 
