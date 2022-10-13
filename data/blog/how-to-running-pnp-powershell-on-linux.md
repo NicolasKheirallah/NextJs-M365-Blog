@@ -1,5 +1,5 @@
 ---
-date: '2021-01-23T21:51:21.726Z'
+date: '2022-09-23T21:51:21.726Z'
 title: How to running PnP Powershell on Linux
 description: is running PnP Powershell usable on linux?
 tags: ['Powershell', 'guide']
