@@ -104,4 +104,11 @@ Learning App Content Repository is used to tell the Viva Learning job where it s
 
 6. New Item and Give it a Title and paste the URL.
 
-![Image](/static/images/assets/GuideVivaLearning20220929/Picture1.png)
+```jss
+<Image
+  alt="ocean"
+  src="/static/images/assets/GuideVivaLearning20220929/Picture1.png"
+  width={256}
+  height={128}
+/>
+```
