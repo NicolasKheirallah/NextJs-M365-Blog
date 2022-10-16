@@ -1,8 +1,8 @@
 ---
 date: '2022-09-29T21:51:21.726Z'
 title: Get Viva Learning running using SharePoint
-description: A guide on how to get viva learning running?
-tags: ['Viva', 'Viva Learning', 'Viva Learning']
+description: A guide on how to get Viva Learning running?
+tags: ['Viva', 'Viva Learning', 'Teams', 'SharePoint']
 summary: A guide on how to get Viva learning up and running, Common issues you can face and how to solve them
 authors: ['default']
 ---
