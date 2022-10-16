@@ -40,7 +40,7 @@ My methodology is that we keep all the learning content in one of the same site!
 
 1. Create Communication Site called : Learning
 
-   ![Image](/static/images/assets/picture2.png)
+   ![Image](/static/images/assets/Vivalearning20220929/picture2.png)
 
 2. Give Everyone-except-External Read access (Optional)
 
@@ -48,15 +48,15 @@ My methodology is that we keep all the learning content in one of the same site!
 
 From here we go to Settings and Choose Org Settings:
 
-![Image](/static/images/assets/screenshot-2022-10-15-125322.png)
+![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-15-125322.png)
 
 Scroll to the bottom and Choose Viva learning.
 
-![Image](/static/images/assets/screenshot-2022-10-15-125400.png)
+![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-15-125400.png)
 
 Viva Learning connects to SharePoint natively and uses a SharePoint List called "Learning App Content Repository" to determine where to find content. The SharePoint Content doesn't need to be stored on this site but is highly recommended.
 
-![Image](/static/images/assets/screenshot-2022-10-15-125424.png)
+![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-15-125424.png)
 
 This is usually pretty instant but can take upto 24 hours!
 
@@ -76,16 +76,16 @@ For testing Viva Learning I recommend that you create a new Setup policy just fo
 1. Begin by visiting Teams admin: https://admin.teams.microsoft.com/
 2. Select Teams apps and then Setup policy
 
-   ![Image](/static/images/assets/picture4.png)
+   ![Image](/static/images/assets/Vivalearning20220929/picture4.png)
 
 3. Press add and then name your Policy something proper: Viva Learning Pilot
 4. Choose Add app uynder Installed apps and search Viva Learning, this will install it for everyone
 
-   ![Image](/static/images/assets/picture5.png)
+   ![Image](/static/images/assets/Vivalearning20220929/picture5.png)
 
 5. Go down to Pinned apps and Add Viva learning, this will make it visible for all
 
-   ![Image](/static/images/assets/picture6.png)
+   ![Image](/static/images/assets/Vivalearning20220929/picture6.png)
 
 ## Adding content
 
@@ -99,24 +99,21 @@ Learning App Content Repository is used to tell the Viva Learning job where it s
 
 1. First start of with going to the folder that you want to Share
 
-   ![Image](/static/images/assets/screenshot-2022-10-16-145438.png)
+   ![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-16-145438.png)
 
 2. Press Share And then Change type to "People in ... with the Link"
 
-   ![Image](/static/images/assets/screenshot-2022-10-16-145450.png)
+   ![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-16-145450.png)
 
 3. Set permission to Can view and then Apply!
 
-   ![Image](/static/images/assets/screenshot-2022-10-16-145450.png)
+   ![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-16-145450.png)
 
 4. Copy the URL
-   ![Image](/static/images/assets/screenshot-2022-10-16-145517.png)
+   ![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-16-145517.png)
 
 5. Now visit the List: Learning App Content Repository
 
 6. New Item and Give it a Title and paste the URL.
 
-![Image](/static/images/assets/picture1.png)
-
-![Image](/static/images/assets/screenshot-2022-10-16-145438.png)
-![Image](/static/images/assets/screenshot-from-2021-01-23-23-10-10.png)
+![Image](/static/images/assets/Vivalearning20220929/picture1.png)
