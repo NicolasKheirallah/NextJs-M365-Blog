@@ -40,7 +40,7 @@ My methodology is that we keep all the learning content in one of the same site!
 
 1. Create Communication Site called : Learning
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/picture2.png)
+   ![Image](/static/images/assets/picture2.png)
 
 2. Give Everyone-except-External Read access (Optional)
 
@@ -48,15 +48,15 @@ My methodology is that we keep all the learning content in one of the same site!
 
 From here we go to Settings and Choose Org Settings:
 
-![Image](/static/images/assets/GuideVivaLearning20220929/Screenshot-2022-10-15-125322.png)
+![Image](/static/images/assets/screenshot-2022-10-15-125322.png)
 
 Scroll to the bottom and Choose Viva learning.
 
-![Image](/static/images/assets/GuideVivaLearning20220929/Screenshot-2022-10-15-125400.png)
+![Image](/static/images/assets/screenshot-2022-10-15-125400.png)
 
 Viva Learning connects to SharePoint natively and uses a SharePoint List called "Learning App Content Repository" to determine where to find content. The SharePoint Content doesn't need to be stored on this site but is highly recommended.
 
-![Image](/static/images/assets/GuideVivaLearning20220929/Screenshot-2022-10-15-125424.png)
+![Image](/static/images/assets/screenshot-2022-10-15-125424.png)
 
 This is usually pretty instant but can take upto 24 hours!
 
@@ -99,21 +99,24 @@ Learning App Content Repository is used to tell the Viva Learning job where it s
 
 1. First start of with going to the folder that you want to Share
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Screenshot-2022-10-16-145438.png)
+   ![Image](/static/images/assets/screenshot-2022-10-16-145438.png)
 
 2. Press Share And then Change type to "People in ... with the Link"
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Screenshot-2022-10-16-145450.png)
+   ![Image](/static/images/assets/screenshot-2022-10-16-145450.png)
 
 3. Set permission to Can view and then Apply!
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Screenshot-2022-10-16-145450.png)
+   ![Image](/static/images/assets/screenshot-2022-10-16-145450.png)
 
 4. Copy the URL
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Screenshot-2022-10-16-145517.png)
+   ![Image](/static/images/assets/screenshot-2022-10-16-145517.png)
 
 5. Now visit the List: Learning App Content Repository
 
 6. New Item and Give it a Title and paste the URL.
 
-![Image](/static/assets/picture1.png)
+![Image](/static/images/assets/picture1.png)
+
+![Image](/static/images/assets/screenshot-2022-10-16-145438.png)
+![Image](/static/images/assets/screenshot-from-2021-01-23-23-10-10.png)
