@@ -40,7 +40,7 @@ My methodology is that we keep all the learning content in one of the same site!
 
 1. Create Communication Site called : Learning
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Picture2.png)
+   ![Image](/static/images/assets/GuideVivaLearning20220929/picture2.png)
 
 2. Give Everyone-except-External Read access (Optional)
 
@@ -76,16 +76,16 @@ For testing Viva Learning I recommend that you create a new Setup policy just fo
 1. Begin by visiting Teams admin: https://admin.teams.microsoft.com/
 2. Select Teams apps and then Setup policy
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Picture4.png)
+   ![Image](/static/images/assets/picture4.png)
 
 3. Press add and then name your Policy something proper: Viva Learning Pilot
 4. Choose Add app uynder Installed apps and search Viva Learning, this will install it for everyone
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Picture5.png)
+   ![Image](/static/images/assets/picture5.png)
 
 5. Go down to Pinned apps and Add Viva learning, this will make it visible for all
 
-   ![Image](/static/images/assets/GuideVivaLearning20220929/Picture6.png)
+   ![Image](/static/images/assets/picture6.png)
 
 ## Adding content
 
@@ -116,9 +116,4 @@ Learning App Content Repository is used to tell the Viva Learning job where it s
 
 6. New Item and Give it a Title and paste the URL.
 
-<Image
-  alt="ocean"
-  src="/static/images/assets/GuideVivaLearning20220929/Picture1.png"
-  width={256}
-  height={128}
-/>
+![Image](/static/assets/picture1.png)
