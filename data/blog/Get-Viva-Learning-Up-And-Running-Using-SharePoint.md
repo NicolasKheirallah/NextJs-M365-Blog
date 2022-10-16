@@ -103,7 +103,7 @@ Learning App Content Repository is used to tell the Viva Learning job where it s
 
 2. Press Share And then Change type to "People in ... with the Link"
 
-   ![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-16-145450.png)
+   ![Image](/static/images/assets/Vivalearning20220929/screenshot-2022-10-16-145451.png)
 
 3. Set permission to Can view and then Apply!
 
