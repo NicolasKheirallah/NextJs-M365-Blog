@@ -7,8 +7,6 @@ summary: A guide on how to use power automate to fill an excel
 authors: ['default']
 ---
 
-ExcelusingPowerAutomate
-
 1. A simple Power Automate job I did for a client who wanted all the list created wthin a month emailed to her as an Excel, So this is how I did it:
    First visit Power Automate:
 
