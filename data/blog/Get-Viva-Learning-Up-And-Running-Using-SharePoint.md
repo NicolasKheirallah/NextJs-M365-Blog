@@ -7,8 +7,6 @@ summary: A guide on how to get Viva learning up and running, Common issues you c
 authors: ['default']
 ---
 
-# Get Viva Learning running using SharePoint
-
 Hi!
 
 So I've got alot of questions from several of my clients about Viva and especially about how do we set it up.
@@ -117,3 +115,11 @@ Learning App Content Repository is used to tell the Viva Learning job where it s
 6. New Item and Give it a Title and paste the URL.
 
 ![Image](/static/images/assets/Vivalearning20220929/picture1.png)
+
+##Common Issues:
+
+###Courses not showing up:
+
+- You have not shared the Folder with a Mail-enabled distrobution Group or M365 group
+
+- Learning Backendjob has not ran, It can take upto 24 hours for courses to show up, If it takes more than 24 hours create a case to MS. I've seen some tenant having their jobs deactivated.
