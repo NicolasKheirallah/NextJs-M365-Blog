@@ -1,6 +1,6 @@
 ---
 date: '2022-10-21T21:51:21.726Z'
-title: How to automaticly extract list items and add them to an Excel using Power Automate
+title: How to automatically extract list items and add them to an Excel using Power Automate
 description: A guide on how to use power automate to fill an excel
 tags: ['Power Automate', 'SharePoint', 'Lists']
 summary: A guide on how to use power automate to fill an excel
@@ -10,7 +10,7 @@ authors: ['default']
 1. A simple Power Automate job I did for a client who wanted all the list created wthin a month emailed to her as an Excel, So this is how I did it:
    First visit Power Automate:
 
-https://make.powerautomate.com/
+   https://make.powerautomate.com/
 
 2. Press Create
 
