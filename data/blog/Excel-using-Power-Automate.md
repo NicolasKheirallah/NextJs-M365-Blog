@@ -9,14 +9,15 @@ authors: ['default']
 
 ExcelusingPowerAutomate
 
-1.A simple Power Automate job I did for a client who wanted all the list created wthin a month emailed to her as an Excel, So this is how I did it:
-First visit Power Automate:
+1. A simple Power Automate job I did for a client who wanted all the list created wthin a month emailed to her as an Excel, So this is how I did it:
+   First visit Power Automate:
 
 https://make.powerautomate.com/
 
 2. Press Create
 
 3. Choose Scheduled cloud flow
+   ![Image](/static/images/assets/ExcelusingPowerAutomate/0.png)
 
 4. Choose when the script will run, I choose once a month.
 
@@ -57,4 +58,4 @@ _Value_: The value from the sharepoint list
    _File Name_: Filename + .xls
    _File Output_: Output from Create HTML Table
 
-![Image](/static/images/assets/ExcelusingPowerAutomate/7.png)
+![Image](/static/images/assets/ExcelusingPowerAutomate/6.png)
