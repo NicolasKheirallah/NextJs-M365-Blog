@@ -27,11 +27,11 @@ This made it easy for us to hide the any of the option of the commandbar that we
 
 2. Select View and then Format Current view.
 
-   ![Image](/static/images/assets/ExcelusingPowerAutomate/1.png)
+   ![Image](/static/images/assets/CommandBarFormatJson/1.png)
 
 3. Choose Advance mode and then paste the Json below:
 
-   ![Image](/static/images/assets/ExcelusingPowerAutomate/2.png)
+   ![Image](/static/images/assets/CommandBarFormatJson/2.png)
 
 4.
 
@@ -56,7 +56,7 @@ This made it easy for us to hide the any of the option of the commandbar that we
 }
 ```
 
-![Image](/static/images/assets/ExcelusingPowerAutomate/4.png)
+![Image](/static/images/assets/CommandBarFormatJson/4.png)
 
 5. Press Preview to se if it worked and then press save.
-   ![Image](/static/images/assets/ExcelusingPowerAutomate/5.png)
+   ![Image](/static/images/assets/CommandBarFormatJson/5.png)
