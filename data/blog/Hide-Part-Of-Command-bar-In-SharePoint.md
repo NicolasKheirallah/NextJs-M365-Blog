@@ -33,7 +33,7 @@ This made it easy for us to hide the any of the option of the commandbar that we
 
    ![Image](/static/images/assets/CommandBarFormatJson/2.png)
 
-4.
+4. Paste the Json inside of the Format View editor:
 
 ```json
 {
@@ -58,5 +58,5 @@ This made it easy for us to hide the any of the option of the commandbar that we
 
 ![Image](/static/images/assets/CommandBarFormatJson/4.png)
 
-5. Press Preview to se if it worked and then press save.
+5. Press Preview to see if it worked and then press save if it fills your requirements.
    ![Image](/static/images/assets/CommandBarFormatJson/5.png)
