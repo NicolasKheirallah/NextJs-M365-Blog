@@ -48,4 +48,5 @@ So let's get started, I'm guessing you already know the basic of PowerApps:
 11. And this is how the SharePoint List looks like.
     ![Image](/static/images/assets/PowerAppsCreateListItems/11.png)
 
-Remember to add a reset after inputting as well as a Your input notification or screen informting the user that it has been saved.
+Remember to add a reset after inputting as well. This to clear the information for the user.
+Also add a notification or screen to inform the user that it has been saved.
