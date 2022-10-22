@@ -31,7 +31,7 @@ So let's get started, I'm guessing you already know the basic of PowerApps:
    ![Image](/static/images/assets/PowerAppsCreateListItems/5.png)
 
 6. Select your SharePoint list and then choose "Ask in Powerapps" for each field you want to input
-   ![Image](/static/images/assets/CommandBarFormatJson/6.png)
+   ![Image](/static/images/assets/PowerAppsCreateListItems/6.png)
 
 7. Press save And it should how up in PowerApps
    ![Image](/static/images/assets/PowerAppsCreateListItems/7.png)
