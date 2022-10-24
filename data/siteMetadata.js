@@ -10,12 +10,12 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/52460329_10216116934708393_7022385805154844672_n (1).jpg',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
+  email: 'Nicolas.kheirallah@gmail.com',
   github: 'https://github.com',
   twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
+  facebook: 'https://www.facebook.com/nicholas.kheirallah',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/nicolas-kheirallah-39717690',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -24,7 +24,7 @@ const siteMetadata = {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-HBYQV1CWTB', // e.g. UA-000000-2 or G-XXXXXXX
     posthogAnalyticsId: '', // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
   },
   newsletter: {
