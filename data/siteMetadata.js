@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://yourmodernworkplace.com/',
   siteRepo: 'https://github.com/NicolasKheirallah/NextJs-M365-Blog',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/52460329_10216116934708393_7022385805154844672_n (1).jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'address@yoursite.com',
   github: 'https://github.com',
