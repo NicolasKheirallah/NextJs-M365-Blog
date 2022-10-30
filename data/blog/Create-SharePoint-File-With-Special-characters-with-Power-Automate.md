@@ -17,11 +17,12 @@ This is how:
 
 3. Add these Values:
 
-| Site Adress  | Your Site                                                                            |
+| Input        | Value                                                                                |
 | ------------ | ------------------------------------------------------------------------------------ |
-| Method       | Post                                                                                 |
-| URI          | \_api/web/lists/getByTitle('YourLibrary')/getitembyid(ItemID)/validateUpdateListItem |
-| Header       |
+| Site Adress  | Your Site                                                                            |
+| Method:      | Post                                                                                 |
+| URI:         | \_api/web/lists/getByTitle('YourLibrary')/getitembyid(ItemID)/validateUpdateListItem |
+| Header:      |
 | accept       | application/json; odata=verbose                                                      |
 | content-type | application/json; odata=verbose                                                      |
 | Body         |
@@ -32,7 +33,7 @@ This is how:
     {
       "__metadata": { "type": "SP.ListItemFormUpdateValue" },
       "FieldName": "FileLeafRef",
-      "FieldValue": "@{outputs('FileName')}"
+      "FieldValue": "FileNameYouWantToUse"
     }
   ],
   "bNewDocumentUpdate": true,
