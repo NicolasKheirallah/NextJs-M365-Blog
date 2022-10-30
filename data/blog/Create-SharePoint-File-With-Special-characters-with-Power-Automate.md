@@ -7,7 +7,7 @@ summary: A guide on how to create File with Special Characthers in Power Automat
 authors: ['default']
 ---
 
-So a common problem with Creating new files in Power Automate is that you can't use Special Characters, which can be abit annoying! But there is an work around for this and this is to use Http Request connector for SharePoint!
+So a common problem with creating new files in Power Automate is that you can't use special characters, which can be abit annoying! But there is an work around for this and this is to use Http Request connector for SharePoint!
 
 This is how:
 
