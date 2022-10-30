@@ -1,6 +1,6 @@
 ---
 date: '2022-04-10T16:51:31'
-title: Create File with Special Characthers in Power Automate
+title: Create File with Special Characters in Power Automate
 description: A guide on how to create File with Special Characthers in Power Automate
 tags: ['SharePoint', 'Document Library', 'PowerAutomate']
 summary: A guide on how to create File with Special Characthers in Power Automate
