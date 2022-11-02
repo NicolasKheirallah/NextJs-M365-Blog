@@ -3,7 +3,7 @@ date: '2022-10-31T11:43:00'
 title: Create Viva Connection for multiple landing pages
 description: Guide for creating multiple Connections Apps for Homesites
 tags: ['Viva', 'Viva Connections', 'Teams', 'SharePoint']
-summary:
+summary: Guide for creating multiple Connections Apps for Homesites
 authors: ['default']
 ---
 
