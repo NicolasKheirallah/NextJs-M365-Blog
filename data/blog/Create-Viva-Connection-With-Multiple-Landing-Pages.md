@@ -7,7 +7,9 @@ summary:
 authors: ['default']
 ---
 
-So it's not that uncommon that some companies are very decentrialised and that they have multiple home sites on a tenant
+---WIP---
+
+So it's not that uncommon that some companiesS are very decentrialised and that they have multiple home sites on a tenant
 This usually means that each company/country/etc has their own sites in that tenant.
 So this is a step to step guide for creating multiple apps!
 
@@ -33,7 +35,9 @@ This is not the full connection suite, you won't get access to a custom dashboar
 
 3. Press App and then New app on the top bar
 
-4. Under basic information input this:
+4. This is the example configuration:
+
+# Basic Information
 
 Short name - 30 characters or less
 Hub
@@ -65,3 +69,52 @@ https://go.microsoft.com/fwlink/?linkid=2039674
 
 Application (client) ID\* :
 00000003-0000-0ff1-ce00-000000000000
+
+# Branding
+
+# App Feature
+
+Personal app:
+
+Name:
+Name of the App
+
+Entity ID:
+Unique ID
+
+Content URL:
+https://YourTentant.sharepoint.com/_layouts/15/teamslogon.aspx?spfx=true&dest=https://YourTentant.sharepoint.com/sites/sweden
+
+Website URL:
+https://YourTentant.sharepoint.com/sites/sweden
+
+# Single sign-on
+
+Application ID URI\*:
+https://YourTentant.sharepoint.com
+
+# Domains:
+
+| Domain                             | Source         |
+| ---------------------------------- | -------------- |
+| YourDomain.sharepoint.com          | Tab,Additional |
+| \*.login.microsoftonline.com       | Additional     |
+| \*.sharepoint.com                  | Additional     |
+| \*.sharepoint-df.com               | Additional     |
+| spoppe-a.akamaihd.net              | Additional     |
+| resourceseng.blob.core.windows.net | Additional     |
+| msft.spoppe.com                    | Additional     |
+
+# Languages
+
+Your supported language
+
+# Advanced
+
+## App Content
+
+Check Full-screen mode
+
+# Publish
+
+Press publish to store and press publish
