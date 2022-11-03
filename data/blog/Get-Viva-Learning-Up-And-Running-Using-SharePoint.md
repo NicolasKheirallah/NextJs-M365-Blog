@@ -116,9 +116,9 @@ Learning App Content Repository is used to tell the Viva Learning job where it s
 
 ![Image](/static/images/assets/Vivalearning20220929/picture1.png)
 
-##Common Issues:
+## Common Issues:
 
-###Courses not showing up:
+### Courses not showing up:
 
 - You have not shared the Folder with a Mail-enabled distrobution Group or M365 group
 
