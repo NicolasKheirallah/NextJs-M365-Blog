@@ -1,5 +1,5 @@
 ---
-date: '2022-10-05T13:55:21'
+date: '2022-11-05T16:11:31'
 title: How to add a field to Microsoft Search
 description: A guide on how to add a field to Microsoft Search to more easily search for content
 tags: ['SharePoint', 'Microsoft Search']
