@@ -1,6 +1,6 @@
 ---
 name: Nicolas Kheirallah
-avatar: /static/images/avatar.png
+avatar: /static/images/avatar.jpg
 occupation: Senior M365 Specialist | SharePoint Lead | Power Platform Architect
 company: Exobe
 email: Nicolas.Kheirallah@gmail.com
