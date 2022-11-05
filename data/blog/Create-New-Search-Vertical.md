@@ -31,6 +31,7 @@ https://admin.microsoft.com/Adminportal/Home#/MicrosoftSearch/verticals
    ![Image](/static/images/assets/addNewSearchVertical/4.png)
 
 7. Search for the field you want to display and select it, you can only select one item.
+   These items are from your managed properties in SharePoint Search and you can map the refinabled fit your needs
 
    ![Image](/static/images/assets/addNewSearchVertical/5.png)
 
