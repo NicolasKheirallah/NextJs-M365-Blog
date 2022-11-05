@@ -1,20 +1,20 @@
 ---
 date: '2022-10-21T21:51:21.726Z'
 title: How to automatically extract list items and add them to an Excel using Power Automate
-description: A guide on how to use power automate to fill an excel
+description: A guide on how to use power automation to fill an excel
 tags: ['Power Automate', 'SharePoint', 'Lists']
-summary: A guide on how to use power automate to fill an excel
+summary: A guide on how to use power automation to fill an excel
 authors: ['default']
 ---
 
-1. A simple Power Automate job I did for a client who wanted all the list created wthin a month emailed to her as an Excel, So this is how I did it:
+1. A simple Power Automate job I did for a client who wanted all the lists created wthin a month emailed to her as an Excel, So this is how I did it:
    First visit Power Automate:
 
    https://make.powerautomate.com/
 
 2. Press Create
 
-3. Choose Scheduled cloud flow
+3. Choose a Scheduled cloud flow
    ![Image](/static/images/assets/ExcelusingPowerAutomate/0.png)
 
 4. Choose when the script will run, I choose once a month.
@@ -46,11 +46,11 @@ Filter query:
 From: Value from SharePoint Get List items
 
 _Header_: Header for excel
-_Value_: The value from the sharepoint list
+_Value_: The value from the SharePoint list
 
 ![Image](/static/images/assets/ExcelusingPowerAutomate/5.png)
 
-7. Search after the Sharepoint Connector and choose Create file:
+7. Search after the Sharepoint Connector and choose to Create file:
    _Site Adress_: Choose where you want to save your file
    _Folder Path_: What is the path for the file
    _File Name_: Filename + .xls

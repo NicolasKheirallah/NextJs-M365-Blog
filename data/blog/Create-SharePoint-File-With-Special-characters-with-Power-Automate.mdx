@@ -1,13 +1,13 @@
 ---
 date: '2022-04-10T16:51:31'
 title: Create File with Special Characters in Power Automate
-description: A guide on how to create File with Special Characthers in Power Automate
+description: A guide on how to create a File with Special characters in Power Automate
 tags: ['SharePoint', 'Document Library', 'PowerAutomate']
-summary: A guide on how to create File with Special Characthers in Power Automate
+summary: A guide on how to create a File with Special characters in Power Automate
 authors: ['default']
 ---
 
-So a common problem with creating new files in Power Automate is that you can't use special characters, which can be abit annoying! But there is an work around for this and this is to use Http Request connector for SharePoint!
+So a common problem with creating new files in Power Automate is that you can't use special characters, which can be a bit annoying! But there is a workaround for this and this is to use the HTTP Request connector for SharePoint!
 
 This is how:
 
@@ -24,12 +24,12 @@ This is how:
 | Method:      | Post                                                                                 |
 | URI:         | \_api/web/lists/getByTitle('YourLibrary')/getitembyid(ItemID)/validateUpdateListItem |
 | Header:      |
-| accept       | application/json; odata=verbose                                                      |
-| content-type | application/json; odata=verbose                                                      |
+| accept       | application/JSON; odata=verbose                                                      |
+| content-type | application/JSON; odata=verbose                                                      |
 | Body         |
 ```
 
-```json
+```JSON
 {
   "formValues": [
     {
