@@ -27,7 +27,9 @@ https://admin.microsoft.com/Adminportal/Home#/Settings/Services
 
 4. Select Viva Topics
 
-![Image](/static/images/assets/GetStartedWithVivaTopics/3.png) 5. Select Get Started
+![Image](/static/images/assets/GetStartedWithVivaTopics/3.png)
+
+5. Select Get Started
 
 ![Image](/static/images/assets/GetStartedWithVivaTopics/4.png)
 
