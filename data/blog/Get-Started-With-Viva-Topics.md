@@ -7,10 +7,12 @@ summary: A guide on how to set Viva topics and getting started
 authors: ['default']
 ---
 
-_Requirements_
+## Requirements
 
 - SharePoint admin
 - Global or Organisational admin
+
+## Lets get started:
 
 1. So we start by vising the admin portal:
    https://admin.microsoft.com/
