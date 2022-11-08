@@ -7,9 +7,7 @@ summary: A guide on how to set Viva topics and getting started
 authors: ['default']
 ---
 
-Viva Topics is the second product SharePoint Syntex)
-
-Requirements
+_Requirements_
 
 - SharePoint admin
 - Global or Organisational admin
