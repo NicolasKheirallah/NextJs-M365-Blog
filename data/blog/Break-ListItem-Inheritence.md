@@ -1,9 +1,9 @@
 ---
 date: '2022-04-05T16:11:31'
-title: How to Set permissions for a SharePoint list
-description: A guide on how to set permissions for a SharePoint list
+title: How to Set permissions for a SharePoint list item
+description: A guide on how to set permissions for a SharePoint list item
 tags: ['SharePoint', 'Lists', 'Power Automate']
-summary: A guide on how to Set permissions for a SharePoint list
+summary: A guide on how to Set permissions for a SharePoint list item
 authors: ['default']
 ---
 
