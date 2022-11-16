@@ -53,7 +53,7 @@ ForEach($Site in $SiteCollections)
     Connect-PnPOnline -Url  $Site.URL -Interactive
     Write-host  Connected to site $Site.URL
     # Get Feature from SharePoint site
-    $activateFeature = Get-PnPFeature -Scope "Web" -Identity $featureId
+    $enableFeature = Get-PnPFeature -Scope "Web" -Identity $featureId
     # Check if feature found or not
 
     if($enableFeature.DefinitionId -eq $null) {
