@@ -2,7 +2,7 @@
 date: '2022-10-16T20:10:01.975Z'
 title: Open documents in desktop mode by default in SharePoint and Teams
 description: A small guide on how to open files in desktop mode by default
-tags: ['Teams', 'SharePoint']
+tags: ['teams', 'sharePoint']
 summary: A small guide on how to open files in desktop mode by default
 authors: ['default']
 ---
