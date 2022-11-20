@@ -10,12 +10,12 @@ authors: ['default']
 So when working with Viva Connection you might have created a seperate Home site for development while your old one lives on until you're done. When you are done, you might wanna swap places so the new site get's the root URL. This is how you do it
 
 1. Visit SharePoint Admin Center
-   https://{Yourtentant}-admin.sharepoint.com/\_layouts/15/online/AdminHome.aspx#/home
+   https://yourtenant-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/home
 
 2. Press Active sites
    ![Image](/static/images/assets/PerformSiteSwap/2.png)
 
-3. Select Your root Site, "https://{Yourtentant}.sharepoint.com/"
+3. Select Your root Site, "https://yourtenant.sharepoint.com/"
 
 - Make sure it isn't a hub site.
 - Make Sure there isn't any retention policies in place for those two sites for now
