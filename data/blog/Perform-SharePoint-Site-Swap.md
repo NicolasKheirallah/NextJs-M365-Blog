@@ -9,6 +9,8 @@ authors: ['default']
 
 So when working with Viva Connection you might have created a seperate Home site for development while your old one lives on until you're done. When you are done, you might wanna swap places so the new site get's the root URL. This is how you do it
 
+# Admin Center
+
 1. Visit SharePoint Admin Center
 
 ```
@@ -37,3 +39,18 @@ https://yourtenant.sharepoint.com/
 5. This can take a small while as something in the background will run.
 
 6. When the site swap is done, I recommend that you reindex the site. Some webpart and search can be cause Issues first 24-48 hours
+
+# Powershell
+
+First you need latest SharePoint Module
+
+```Powershell
+Update-Module Microsoft.Online.Sharepoint.PowerShell -Force
+```
+
+```Powershell
+Invoke-SPOSiteSwap`
+-SourceURL https://yourtenant.sharepoint.com/sites/newSite `
+-TargetURL https://yourtenant.sharepoint.com `
+-ArchiveURL https://yourtenant.sharepoint.com/sites/oldSite -Force
+```
