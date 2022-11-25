@@ -35,11 +35,15 @@ authors: ['default']
 | \*Uri          | /\_api/SP.UserProfiles.PeopleManager/SetSingleValueProfileProperty |
 | \*Headers      | Accept: application/json; odata=nometadata                         |
 | \*Headers      | content-type: application/json; odata=nometadata                   |
-| \*Body         | {                                                                  |
+| \*Body         |
 
-        'accountName': "i:0#.f|membership|UsersEmailFromForm",
-        'propertyName': 'AboutMe',
-        'propertyValue': 'YourFieldFromForms'}                                        |
+```json
+{
+  "accountName": "i:0#.f|membership|UsersEmailFromForm",
+  "propertyName": "AboutMe",
+  "propertyValue": "YourFieldFromForms"
+}
+```
 
 ## Multi value Property
 
@@ -50,10 +54,12 @@ authors: ['default']
 | \*Uri          | /\_api/SP.UserProfiles.PeopleManager/SetMultiValuedProfileProperty |
 | \*Headers      | Accept: application/json; odata=nometadata                         |
 | \*Headers      | content-type: application/json; odata=nometadata                   |
-| \*Body         | {                                                                  |
+| \*Body         |                                                                    |
 
-            'accountName': "i:0#.f|membership|UsersEmailFromForm",
-            'propertyName': 'OnePiece',
-            'propertyValue': ["Luffy", "Zoro", "Nami", "Usopp", "Robin"] } |
-
-|
+```json
+{
+  "accountName": "i:0#.f|membership|UsersEmailFromForm",
+  "propertyName": "OnePiece",
+  "propertyValue": ["Luffy", "Zoro", "Nami", "Usopp", "Robin"]
+}
+```
