@@ -35,7 +35,7 @@ authors: ['default']
 
 ```
 | Name           | Value                                                            |
-| -------------- | -----------------------------------------------------------------|
+| ------------ | ------------------------------------------------------------------ |
 | Site Address | https://yourTenant.sharepoint.com/sites/yourSite                   |
 | Method       | POST                                                               |
 | Uri          | /\_api/SP.UserProfiles.PeopleManager/SetSingleValueProfileProperty |
@@ -55,8 +55,8 @@ authors: ['default']
 ## Multi value Property
 
 ```
-| Name           | Value                                                            |
-| -------------- | -----------------------------------------------------------------|
+| Name         | Value                                                              |
+| ------------ | ------------------------------------------------------------------ |
 | Site Address | https://yourTenant.sharepoint.com/sites/yourSite                   |
 | Method       | POST                                                               |
 | Uri          | /\_api/SP.UserProfiles.PeopleManager/SetMultiValuedProfileProperty |
