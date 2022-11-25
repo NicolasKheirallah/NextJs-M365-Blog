@@ -29,31 +29,31 @@ authors: ['default']
 ## Single value Property
 
 | Name           | Value                                                              |
-| -------------- | ------------------------------------------------------------------ | ---------- | -------------------- |
+| -------------- | ------------------------------------------------------------------ |
 | \*Site Address | https://yourTenant.sharepoint.com/sites/yourSite                   |
 | \*Method       | POST                                                               |
 | \*Uri          | /\_api/SP.UserProfiles.PeopleManager/SetSingleValueProfileProperty |
 | \*Headers      | Accept: application/json; odata=nometadata                         |
 | \*Headers      | content-type: application/json; odata=nometadata                   |
-| \*Body         | {'accountName': "i:0#.f                                            | membership | UsersEmailFromForm", |
+| \*Body         | {                                                                  |
 
+        'accountName': "i:0#.f|membership|UsersEmailFromForm",
         'propertyName': 'AboutMe',
-        'propertyValue': 'YourFieldFromForms'}
-
-|
+        'propertyValue': 'YourFieldFromForms'}                                        |
 
 ## Multi value Property
 
 | Name           | Value                                                              |
-| -------------- | ------------------------------------------------------------------ | ---------- | --------------------------------- |
+| -------------- | ------------------------------------------------------------------ |
 | \*Site Address | https://yourTenant.sharepoint.com/sites/yourSite                   |
 | \*Method       | POST                                                               |
 | \*Uri          | /\_api/SP.UserProfiles.PeopleManager/SetMultiValuedProfileProperty |
 | \*Headers      | Accept: application/json; odata=nometadata                         |
 | \*Headers      | content-type: application/json; odata=nometadata                   |
-| \*Body         | { 'accountName': 'i:0#.f                                           | membership | user@yourtenant.onmicrosoft.com', |
+| \*Body         | {                                                                  |
 
+            'accountName': "i:0#.f|membership|UsersEmailFromForm",
             'propertyName': 'OnePiece',
-            'propertyValue': ["Luffy", "Zoro", "Nami", "Usopp", "Robin"] }
+            'propertyValue': ["Luffy", "Zoro", "Nami", "Usopp", "Robin"] } |
 
 |
