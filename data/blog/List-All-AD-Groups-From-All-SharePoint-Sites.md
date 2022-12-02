@@ -9,12 +9,15 @@ authors: ['default']
 
 So I was helping a friend of mind that had an issue with not knowing which AD groups are invited into SharePoint, as these groups are seen as persons when invited directly into SharePoint own permissions groups. So I helped them out with creating a script that checks all the sites if they contain any AD group.
 
-Requirements:
-Powershell 7
-Graph Module: https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0
-PnP Module: https://pnp.github.io/powershell/articles/installation.html
+## Requirements :
 
-Code for Downloading Image Column in List:
+- Powershell 7
+
+- Graph Module: https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0
+
+- PnP Module: https://pnp.github.io/powershell/articles/installation.html
+
+## Code for Downloading Image Column in List:
 
 ```
 Import-Module Microsoft.Graph.Groups
