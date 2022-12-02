@@ -23,7 +23,6 @@ So I was helping a friend of mine that had an issue she was faceing. The issue w
 Import-Module Microsoft.Graph.Groups
 Connect-Graph -Scopes "Group.Read.All", "Directory.Read.All"
 $getAllADGroups = Get-MgGroup
-Export-Csv '.\getAllSitesWithADGroup.csv'
 Connect-PnPOnline -Url "https://-admin.sharepoint.com/" -Interactive
 
 #Get All Site collections data and export to CSV
