@@ -7,7 +7,7 @@ summary: A Script to list all groups invited into SharePoint
 authors: ['default']
 ---
 
-So I was helping a friend of mind that had an issue with not knowing which AD groups are invited into SharePoint, as these groups are seen as persons when invited directly into SharePoint own permissions groups. So I helped them out with creating a script that checks all the sites if they contain any AD group.
+So I was helping a friend of mine that had an issue she was faceing. The issue was that the company she was working for had alot of AD groups 1000+ Which needed to be replaced, these AD groups were invited as members in some SharePoint sites 1000+. The issue is when invited a AD group as a member of a SharePoint Site the group is added as a person and we can not distingush between a group and a person. So to solve this issue I create this script which will iterate through all Sites and check if any members of the site has the same GUID as the AD group. if so add it to a CSV.
 
 ## Requirements :
 
