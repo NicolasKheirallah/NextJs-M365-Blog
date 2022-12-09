@@ -40,6 +40,8 @@ Connect-PnPOnline -URL "yourtentant-admin@sharepoint.com"
 Get-PnPTenant | Select ViewInFileExplorerEnabled
 //Sets the setting
 Set-PnPTenant -ViewInFileExplorerEnabled $true
+Set-PnPTenant -UsePersistentCookiesForExplorerView $true
+
 ´´´
 
 And now it should work :smile:
