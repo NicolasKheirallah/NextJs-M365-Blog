@@ -1,0 +1,47 @@
+---
+date: '2022-09-21T11:43:00'
+title: Open View in File Explorer using Edge
+description: How to open your sharepoint library locally
+summary: open your sharepoint library locally
+authors: ['default']
+---
+
+So a nice feature that existed in the days of Internet Explorer and classic SharePoint was that you should open a document library locally on your PC, which could simplfy things for open
+This feature is now again avaiable for SharePoint Online using Edge and all you need to do it some simple edit in your registery!
+
+Requirements:
+
+- PC with Windows 10 or 11
+- SharePoint admin
+- PowerShell 7
+- PnP Powershell Module
+- Local adminsitrator
+
+1. First of check that you have edge version 93 and above, you can find this under this [Link](edge://settings/help)
+   ![Image](/static/images/assets/ViewinFileExplorer/1.png)
+
+2. Open regedit:
+   ![Image](/static/images/assets/ViewinFileExplorer/2.png)
+
+3. Navigate to [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+
+4. Create a new String variable called: "ConfigureViewInFileExplorer"
+
+5. Set it as "[{"cookies": ["rtFa", "FedAuth"], "domain": "crescentintranet.sharepoint.com"}]"
+   ![Image](/static/images/assets/ViewinFileExplorer/3.png)
+
+6. Now install Powershell 7 + PnP Powershell if you don't have it!
+
+7. use this script to configure everything
+
+´´´
+Connect-PnPOnline -URL "yourtentant-admin@sharepoint.com"
+//checks current settings
+Get-PnPTenant | Select ViewInFileExplorerEnabled
+//Sets the setting
+Set-PnPTenant -ViewInFileExplorerEnabled $true
+´´´
+
+And now it should work :smile:
+
+![Image](/static/images/assets/ViewinFileExplorer/4.png)
