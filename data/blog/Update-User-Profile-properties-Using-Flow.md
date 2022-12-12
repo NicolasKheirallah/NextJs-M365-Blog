@@ -34,7 +34,7 @@ authors: ['default']
 ## Single value Property
 
 ```
-| Name           | Value                                                            |
+| Name         | Value                                                              |
 | ------------ | ------------------------------------------------------------------ |
 | Site Address | https://yourTenant.sharepoint.com/sites/yourSite                   |
 | Method       | POST                                                               |
