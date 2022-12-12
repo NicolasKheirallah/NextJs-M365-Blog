@@ -29,11 +29,13 @@ Requirements:
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
    ´´´
 
-4. Create a new String variable called: "ConfigureViewInFileExplorer"
+4. Create a new String variable called: &quot;ConfigureViewInFileExplorer&quot;
 
 5. Set it as:
    ´´´
-   "[{"cookies": ["rtFa", "FedAuth"], "domain": "crescentintranet.sharepoint.com"}]"
+
+   [{&quot;cookies&quot;: [&quot;rtFa&quot;, &quot;FedAuth&quot;], &quot;domain&quot;: &quot;yourIntranet.sharepoint.com&quot;}]
+
    ´´´
    ![Image](/static/images/assets/ViewinFileExplorer/3.png)
 
@@ -42,7 +44,7 @@ Requirements:
 7. use this script to configure everything
 
 ´´´
-Connect-PnPOnline -URL "yourtentant-admin@sharepoint.com"
+Connect-PnPOnline -URL &quot;yourtentant-admin@sharepoint.com&quot;
 //checks current settings
 Get-PnPTenant | Select ViewInFileExplorerEnabled
 //Sets the setting
