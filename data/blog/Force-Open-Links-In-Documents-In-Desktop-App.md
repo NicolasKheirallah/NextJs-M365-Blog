@@ -2,7 +2,7 @@
 date: '2022-12-12T16:11:31'
 title: How to open a Office document from link in desktop app
 description: How to open a Office document from link in desktop app
-tags: ['SharePoint', 'Office365', 'Power Automate']
+tags: ['SharePoint', 'Office 365', 'Power Automate']
 summary: A guide on how to open a Office document from link in desktop app
 authors: ['default']
 ---
