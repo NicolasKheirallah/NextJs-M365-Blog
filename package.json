@@ -18,7 +18,7 @@
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.13",
     "clarity-js": "^0.7.0",
-    "esbuild": "^0.15.13",
+    "esbuild": "^0.14.51",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "image-size": "1.0.2",
