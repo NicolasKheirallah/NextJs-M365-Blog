@@ -14,24 +14,24 @@ So a common issue is that you have links in Word/PowerPoint that you want to ope
 So depending on your file type you need to add a prefix, this would be based on the application
 
 ```
-| Application                                        | Value                                                |
-| ------------------------------------------- | ---------------------------------------------------- |
-| MS Word          | ms-word                                                  |
-| MS PowerPoint | ms-powerpoint                                                  |
-| MS Excel                                      | ms-excel     |
-| MS Visio   | ms-visio                               |
-| MS Access | ms-access                                |
-| MS Project                   | ms-project                                            |
-| MS Publisher         | ms-publisher       |
-| MS InfoPath                                | ms-infopath      |
+| Application   | Value|
+|:----: |:----: |
+| MS Word| ms-word|
+| MS PowerPoint | ms-powerpoint|
+| MS Excel| ms-excel|
+| MS Visio| ms-visio|
+| MS Access | ms-access|
+| MS Project| ms-project|
+| MS Publisher| ms-publisher|
+| MS InfoPath| ms-infopath|
 ```
 
 ```
-| Commands                                        | Value                                                |
-| ------------------------------------------- | ---------------------------------------------------- |
-| View Document          | ofv                                                  |
-| Edit Document | ofe                                                  |
-| New Document                                      | nft     |
+| Commands| Value|
+| :----: | :----: |
+| View Document| ofv|
+| Edit Document | ofe|
+| New Document| nft|
 ```
 
 Structure:
