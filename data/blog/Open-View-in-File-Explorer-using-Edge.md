@@ -24,11 +24,17 @@ Requirements:
 2. Open regedit:
    ![Image](/static/images/assets/ViewinFileExplorer/2.png)
 
-3. Navigate to [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+3. Navigate to
+   ´´´
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+   ´´´
 
 4. Create a new String variable called: "ConfigureViewInFileExplorer"
 
-5. Set it as "[{"cookies": ["rtFa", "FedAuth"], "domain": "crescentintranet.sharepoint.com"}]"
+5. Set it as:
+   ´´´
+   "[{"cookies": ["rtFa", "FedAuth"], "domain": "crescentintranet.sharepoint.com"}]"
+   ´´´
    ![Image](/static/images/assets/ViewinFileExplorer/3.png)
 
 6. Now install Powershell 7 + PnP Powershell if you don't have it!
