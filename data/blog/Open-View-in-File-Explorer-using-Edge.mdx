@@ -25,9 +25,10 @@ Requirements:
    ![Image](/static/images/assets/ViewinFileExplorer/2.png)
 
 3. Navigate to
-   ´´´text
+
+   ```regedit
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
-   ´´´
+   ```
 
 4. Create a new String variable called: &quot;ConfigureViewInFileExplorer&quot;
 
@@ -45,14 +46,16 @@ Requirements:
 
 7. use this script to configure everything
 
-´´´powershell
+```powerShell
+
 Connect-PnPOnline -URL &quot;yourtentant-admin@sharepoint.com&quot;
 //checks current settings
 Get-PnPTenant | Select ViewInFileExplorerEnabled
 //Sets the setting
 Set-PnPTenant -ViewInFileExplorerEnabled $true
 Set-PnPTenant -UsePersistentCookiesForExplorerView $true
-´´´
+
+```
 
 And now it should work :smile:
 
