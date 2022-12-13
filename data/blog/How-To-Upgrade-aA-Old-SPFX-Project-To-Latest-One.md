@@ -8,6 +8,7 @@ authors: ['default']
 ---
 
 So I've needed to do this a couple of time so here's my step by step in upgrade from a SPFX superold project to the latest SPFX version.
+This is a living post and a reminder to myself on how to do it, so it will be updated time to time when i find new things to do add :)
 
 Here is my tips common things I need to do!:
 
