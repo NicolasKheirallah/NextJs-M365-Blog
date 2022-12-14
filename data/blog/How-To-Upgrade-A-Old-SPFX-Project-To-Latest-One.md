@@ -18,7 +18,7 @@ https://www.npmjs.com/package/npm-check-updates
 
 2. Remove TSlint file, This file isn't needed anymore and can be deleted.
 
-3. Update tsconfig, make sure that the compiler uses rush-stack-compiler-4.5 :
+3. Update tsconfig, make sure that the compiler uses rush-stack-compiler-4.5, move any duplicate dev dependenices such as rush-stack-compiler-\*:
 
 - npm install -D @microsoft/rush-stack-compiler-4.5
 
@@ -43,6 +43,8 @@ import { MSGraphClientV3 } from '@microsoft/sp-http';
       .then((client: MSGraphClientV3) => { //do your stuff
       })
 ```
+
+7. Use npm dedupe to remove duplicates
 
 You can use make use of CLI for m365 to make a full report of what you need to do:
 
