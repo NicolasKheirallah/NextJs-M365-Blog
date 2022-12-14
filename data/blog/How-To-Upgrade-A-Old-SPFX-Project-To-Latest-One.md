@@ -1,6 +1,6 @@
 ---
 date: '2022-12-13T11:51:21.726Z'
-title: Update your Old SPFX Project to Latest SPFX Version
+title: Update your old SPFX project to latest SPFX version
 description: Upgrade your older SPFX 1.10 and older spfx project to 1.16.1
 tags: ['Power Automate', 'SharePoint', 'Lists']
 summary: A guide on how to upgrade your older SPFX 1.10 and older spfx project to 1.16.1 abd newer
@@ -46,6 +46,6 @@ import { MSGraphClientV3 } from '@microsoft/sp-http';
 
 7. Use npm dedupe to remove duplicates
 
-You can use make use of CLI for m365 to make a full report of what you need to do:
+8. You can use make use of CLI for m365 to make a full report of what you need to do:
 
 https://pnp.github.io/cli-microsoft365/cmd/spfx/project/project-upgrade/
