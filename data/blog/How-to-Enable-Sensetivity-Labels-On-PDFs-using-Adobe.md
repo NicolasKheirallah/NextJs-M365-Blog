@@ -9,9 +9,7 @@ authors: ['default']
 
 So in this guide we will enable native sensetivity labels in adobe acrobat!
 
-So this is a step to step guide for getting started with Viva Connections
-
-Requirements
+Requirements:
 
 - Admin on local computer
 - Adobe Acrobat (atleast version 22.001.20142)
