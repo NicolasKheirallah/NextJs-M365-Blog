@@ -1,5 +1,5 @@
 ---
-date: '2022-10-01T11:43:00'
+date: '2022-11-24T11:43:00'
 title: How to enable sensitivity labels on PDF using Adobe
 description: A guide on how natively enable Sensitivity labels on PDFs
 tags: ['Sensitivity Labels', 'SharePoint', 'PDF', 'Adobe']
@@ -14,7 +14,7 @@ So this is a step to step guide for getting started with Viva Connections
 Requirements
 
 - Admin on local computer
-- Adobe Acrobat (Not this is not Adobe Reader, which reads PDFs)
+- Adobe Acrobat (atleast version 22.001.20142)
 - Windows 10 or 11 machine
 - Sensitivity labels setup (ofc?)
 
@@ -46,3 +46,9 @@ Change the value of variable:
 File → Protect PDF → Select a Microsoft Sensitivity Label
 
 6. Login and you should have all your labels available
+
+Sidenote:
+
+- Remember to remove any additional plugins
+- Password encrypted PDFs aren't supported
+- PDF/A isn't supported either, usually a goverment requirement.
