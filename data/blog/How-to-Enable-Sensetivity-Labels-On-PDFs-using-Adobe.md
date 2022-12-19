@@ -29,6 +29,7 @@ https://helpx.adobe.com/uk/enterprise/kb/mpip-support-acrobat.html
 Change the value of variable:
 
 > bMIPCheckPolicyOnDocSave = 1
+
 > bMIPLabelling to 1
 
 3. Now navigate to:
