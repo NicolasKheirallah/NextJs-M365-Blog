@@ -1,0 +1,113 @@
+---
+date: '2023-01-12T11:43:00'
+title: Create Viva Topics app in Teams
+description: Guide for creating Viva topics application
+tags: ['Viva', ' Viva topics', 'Teams', 'SharePoint']
+summary: Access Vivaa topics from Teams
+authors: ['default']
+---
+
+So something that's been showed of by Microsoft is that you can Access Viva topics from the app bar in Teams, This isn't avaiable yet but that won't stop us!
+So lets build our own app! =D
+
+Requirements:
+
+- Microsoft Teams admin (To add Viva Topic App)
+- SharePoint admin
+- Communication Site for Viva topics
+- A custom name for each app (Viva topics)
+- Custom icons in PNG, 192X192, and 32x32 in size
+- Developer portal
+
+1. Visit Teams and press apps
+
+2. Search after the developer portal
+
+![Image](/static/images/assets/VivaTopics/1.png)
+
+3. Press App and then New app on the top bar
+
+4. This is the example configuration:
+
+# Basic Information
+
+```
+| Name                                        | Value                                                |
+| ------------------------------------------- | ---------------------------------------------------- |
+| Short name - 30 characters or less          | Viva Topics                                                  |
+| Full name - up to 100 characters (optional) | Viva Topics                                                  |
+| App ID                                      | 8178e53b-f373-4605-87fa-122274cfebf3c //Generated     |
+| Short description - 80 characters or less   | Viva Topics                               |
+| Long description - 4,000 characters or less | Viva Topics                                |
+| Developer or company name                   | Your name                                            |
+| Website (must be a valid HTTPS URL)         | https://go.microsoft.com/fwlink/?linkid=868076       |
+| Privacy policy                              | https://privacy.microsoft.com/en-us/privacystatement |
+| Terms of use                                | https://go.microsoft.com/fwlink/?linkid=2039674      |
+| Application (client) ID                     | 00000003-0000-0ff1-ce00-000000000000                   |
+| Terms of use                                | https://go.microsoft.com/fwlink/?linkid=2039674      |
+```
+
+![Image](/static/images/assets/VivaTopics/2.png)
+
+# Branding
+
+![Image](/static/images/assets/VivaTopics/4.png)
+
+# App Feature
+
+```
+| Name        | Value                                                                                                                              |
+| ----------- | -----------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Name of the App                                                                                                                    |
+| Entity ID   | Unique ID                                                                                                                          |
+| Content URL | https://YourTentant.sharepoint.com/_layouts/15/teamslogon.aspx?spfx=true&dest=https://YourTentant.sharepoint.com/sites/TopicCenter |
+| Website URL | https://YourTentant.sharepoint.com/sites/TopicCenter                                                                               |
+```
+
+![Image](/static/images/assets/VivaTopics/3.png)
+
+# Single sign-on
+
+```
+| Name           | Value                              |
+| -------------- | ---------------------------------- |
+| Application ID | https://YourTentant.sharepoint.com |
+```
+
+# Domains:
+
+```
+
+| Domain                             | Source         |
+| ---------------------------------- | -------------- |
+| YourDomain.sharepoint.com          | Tab,Additional |
+| \*.login.microsoftonline.com       | Additional     |
+| \*.sharepoint.com                  | Additional     |
+| \*.sharepoint-df.com               | Additional     |
+| spoppe-a.akamaihd.net              | Additional     |
+| resourceseng.blob.core.windows.net | Additional     |
+| msft.spoppe.com                    | Additional     |
+```
+
+# Languages
+
+Your supported language
+
+# Advanced
+
+## App Content
+
+Check Full-screen mode
+
+# Publish
+
+Press publish to store and press publish
+
+# In Teams
+
+Now your Viva topics app should be visiable in teams and accessable
+![Image](/static/images/assets/VivaTopics/5.png)
+
+You can find samples in my git if you want some help in the road, just import this to your Developer portal and change "test" to your tenant:
+
+https://github.com/NicolasKheirallah/M365-Code-Samples-From-blog/tree/main/VivaTopicsInTeams
