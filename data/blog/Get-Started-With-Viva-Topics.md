@@ -60,3 +60,9 @@ https://admin.microsoft.com/Adminportal/Home#/Settings/Services
 It can take upto two weeks until Viva topics has indexed all the content of your tentant, especially if you have alot of information stored in your tenant!
 
 ![Image](/static/images/assets/GetStartedWithVivaTopics/12.png)
+
+## Update
+
+2023-01-11:
+I've added a guide to add Viva Topics to teams:
+https://yourmodernworkplace.com/blog/Create-Viva-Topics-App-In-Teams
