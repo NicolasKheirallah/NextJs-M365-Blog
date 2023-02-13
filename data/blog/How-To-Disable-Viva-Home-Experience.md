@@ -30,7 +30,10 @@ Well yes! here's how:
 Connect-SPOService -Url "https://<tenant>-admin.sharepoint.com" -ModernAuth
 ```
 
-3. Run the command at below, "$True" will set your SharePoint site as Default landing page. $false will set Viva Home as the default landing
+3. Run the command at below:
+
+- "$true" will set your SharePoint site as Default landing page.
+- "$false" will set Viva Home as the default landing
 
 ```Powershell
 Set-SPOHomeSite -HomeSiteUrl <homesiteURL> -VivaConnectionsDefaultStart $true
