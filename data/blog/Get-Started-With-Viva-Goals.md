@@ -40,7 +40,7 @@ The next step is to create your company OKRs, which are the high-level goals tha
 
 - Open the **Viva Goals** app in Microsoft Teams
 - Click on **Create new OKR**
-- Enter a name for your company OKR (for example, "Increase customer satisfaction")
+- Enter a name for your company OKR (for example, "Improve Raw data quality from sensors")
 - Enter a description for your company OKR (for example, "We want to delight our customers with our products and services")
 - Enter one or more key results for your company OKR (for example, "Achieve a Net Promoter Score of 80 by Q4")
 - Assign an owner for each key result (for example, "Customer Success Manager")
@@ -56,18 +56,18 @@ The final step is to align team OKRs with company OKRs, which are the specific g
 
 - Open the **Viva Goals** app in Microsoft Teams
 - Click on **Create new OKR**
-- Enter a name for your team OKR (for example, "Improve customer support quality")
-- Enter a description for your team OKR (for example, "We want to provide fast and effective support to our customers")
-- Enter one or more key results for your team OKR (for example, "Reduce average response time by 50% by Q4")
-- Assign an owner for each key result (for example, "Customer Support Agent")
+- Enter a name for your team OKR (for example, "Improve Raw data quality from sensors")
+- Enter a description for your team OKR (for example, "We want to provide much granular data quality to improve the quality")
+- Enter one or more key results for your team OKR (for example, "Reduce average error's by 50% by Q4")
+- Assign an owner for each key result (for example, "IoT Product owner")
 - Set a target value and a current value for each key result (for example,"10 minutes"and"20 minutes")
   -Set a due date for each key result(for example,"December 31st")
   -Click on**Align with company OKR**
-  -SelectthecompanyOKRthatyourteamOKRisalignedwith(for example,"Increasecustomersatisfaction")
+  -Select the company's OKR that your team's OKR is aligned with (for example,"Increase Customer satisfaction in product")
   -Click on**Save**
 
 Repeat this process foreach team OKR that you want to create.
-You can also editor TO delete existing OKRs.
+You can also editor to delete existing OKRs.
 
 ## Conclusion
 
