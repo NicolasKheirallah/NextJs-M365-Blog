@@ -1,5 +1,5 @@
 ---
-date: '2022-03-17T11:19:23.432Z'
+date: '2023-03-17T11:19:23.432Z'
 title: How to configure Viva Goals
 description: A guide on How to configure Viva Goals
 tags: ['Viva Goals', 'Viva']
