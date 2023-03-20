@@ -1,9 +1,9 @@
 ---
 date: '2022-12-13T11:51:21.726Z'
 title: Update your old SPFX project to latest SPFX version
-description: Upgrade your older SPFX 1.10 and older spfx project to 1.16.1
-tags: ['Power Automate', 'SharePoint', 'Lists']
-summary: A guide on how to upgrade your older SPFX 1.10 and older spfx project to 1.16.1 abd newer
+description: Upgrade your older SPFX 1.10 and older spfx project to 1.15 or newer
+tags: ['Dev', 'SharePoint', 'SPFX']
+summary: A guide on how to upgrade your older SPFX 1.10 and older spfx project  1.15 or newer
 authors: ['default']
 ---
 
