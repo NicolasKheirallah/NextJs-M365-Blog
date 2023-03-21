@@ -1,3 +1,12 @@
+---
+date: '2020-09-10T11:54:01.975Z'
+title: What Are The Benefits of SharePoint Intranet?
+description: SharePoint Intranet vs Other Intranet, what do we gain?
+tags: ['SharePoint']
+summary: SharePoint Intranet vs Other Intranet, what do we gain?
+authors: ['default']
+---
+
 # What is SharePoint?
 
 SharePoint is a web-based platform that allows you to create, share, and manage content and information with your team, organization, or external partners. SharePoint is part of the Microsoft 365 suite of products and services, which also includes Office applications, OneDrive cloud storage, Teams collaboration tool, and more.
