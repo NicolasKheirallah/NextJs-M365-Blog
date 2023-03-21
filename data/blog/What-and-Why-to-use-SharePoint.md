@@ -1,9 +1,9 @@
 ---
 date: '2020-09-10T11:54:01.975Z'
 title: What Are The Benefits of SharePoint Intranet?
-description: SharePoint Intranet vs Other Intranet, what do we gain?
+description: What and why to use SharePoint as an Intranet and what do we gain?
 tags: ['SharePoint']
-summary: SharePoint Intranet vs Other Intranet, what do we gain?
+summary: What and why to use SharePoint as an Intranet and what do we gain?
 authors: ['default']
 ---
 
