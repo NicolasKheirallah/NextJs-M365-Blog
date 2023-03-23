@@ -2,7 +2,7 @@
 date: '2023-03-19T15:14:22.412Z'
 title: Best practice when using Viva Goals and OKRs
 description: what is the best practice when using Viva goals
-tags: ['Viva Goals', 'Viva']
+tags: ['Viva Goals', 'Viva', OKR]
 summary: What is the best practice when using Viva goals
 authors: ['default']
 ---
