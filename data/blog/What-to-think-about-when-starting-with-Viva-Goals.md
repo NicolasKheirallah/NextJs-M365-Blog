@@ -7,7 +7,7 @@ summary: A guide on what to think about when thinking to start using viva goals
 authors: ['default']
 ---
 
-# What should one plan about when with Viva goals and OKRs?
+# What should one plan about when using Viva goals and OKRs?
 
 ## Introduction
 
