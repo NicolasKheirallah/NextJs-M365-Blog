@@ -9,9 +9,9 @@ authors: ['default']
 
 # Best Practices for Tracking Your Progress in Viva Goals
 
-Viva Goals is a goal-setting and management solution that aligns teams to your organization's strategic priorities, driving results and a thriving business with OKRs. OKRs stand for Objectives and Key Results, a framework that helps you define what you want to achieve (objectives) and how you will measure your progress (key results).
+Viva Goals is a goal-setting and management solution that aligns teams to your organization's strategic priorities, driving results and a thriving business with OKRs. But how do you use them effectively? What are the best practices to set, track and review your Viva goals and OKR?
 
-In this blog post, I will share some best practices for tracking your progress in Viva Goals, so you can stay focused, motivated, and aligned with your team and organization.
+In this blog post, I will share some best practices for tracking your progress with Viva Goals. so you can stay focused, motivated, and aligned with your team and organization!
 
 ## 1. Align your goals
 
