@@ -35,12 +35,6 @@ You can use Viva Goals to create objectives using natural language or templates 
 
 # What You Should Think With Tracking Your Progress in Viva Goals and OKRs
 
-Viva Goals is a goal-alignment solution that connects teams to your organization’s strategic priorities, unites them around your mission and purpose, and drives business results. To do this, Viva Goals applies the power of the objectives and key results (OKR) framework.
-
-OKRs are a simple way to set and measure goals by defining what you want to achieve (objectives) and how you will know if you are successful (key results). OKRs help you align your work with the bigger picture, focus on what matters most, and track your progress over time.
-
-But how do you track your progress in Viva Goals and OKRs? And why is it important to do so? In this blog post, we will answer these questions and share some best practices for tracking your progress in Viva Goals and OKRs.
-
 ## Define your team
 
 Before you can create OKRs, you need to define your team. A team is a group of people who work together towards a common goal. Teams can be based on organizational structure, projects, initiatives, or any other criteria that make sense for your business.
