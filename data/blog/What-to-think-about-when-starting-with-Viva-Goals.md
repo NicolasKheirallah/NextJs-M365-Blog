@@ -33,8 +33,6 @@ You can use Viva Goals to create objectives using natural language or templates 
 
 - Set realistic expectations: When planning your OKRs using Viva Goals, it is important to set realistic expectations for yourself and others. Remember that OKRs are meant to be ambitious but achievable; they should stretch you beyond your comfort zone but not demoralize you. A good rule of thumb is that you should aim for achieving 70% of your key results; anything above that is exceptional performance. You can use Viva Goals to adjust the difficulty level of each objective according to its expected completion rate .
 
-# What You Should Think With Tracking Your Progress in Viva Goals and OKRs
-
 ## Define your team
 
 Before you can create OKRs, you need to define your team. A team is a group of people who work together towards a common goal. Teams can be based on organizational structure, projects, initiatives, or any other criteria that make sense for your business.
