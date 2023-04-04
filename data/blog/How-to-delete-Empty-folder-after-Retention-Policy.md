@@ -30,6 +30,6 @@ To create such a flow, you will need to use the SharePoint connector and the Rec
 
 - Add a Condition action to check if there are any files inside each folder. You can use length(body('Get*files*(properties_only)\_2')?['value']) as the expression for the condition, and compare it with 0.
 - If the condition is true (the folder is empty), add a Delete file action from the SharePoint connector. Specify the same site address as before, and use File identifier from the first Get files action as the file identifier. This will delete the empty folder.
-- If the condition is false (the folder is not empty), you can add any other action you want, such as sending an email notification or logging a message.
+- If the condition is false (the folder is not empty) do nothing.
 
-You can customize this flow according to your requirements and preferences. For example, you can add more filters or conditions to exclude certain folders from being deleted, or add more actions to handle errors or exceptions.
+You can customize this flow according to your requirements and preferences.
