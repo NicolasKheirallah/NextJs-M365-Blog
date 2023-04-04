@@ -7,17 +7,17 @@ summary: A guide on how to Delete Empty Folders After Applying Retention Policy 
 authors: ['default']
 ---
 
-#How to Delete Empty Folders After Applying Retention Policy in SharePoint
+# How to Delete Empty Folders After Applying Retention Policy in SharePoint
 
 If you are using retention policies in SharePoint to manage the lifecycle of your documents, you may have noticed that empty folders are not deleted automatically when the files inside them are removed by the policy. This can create clutter and confusion for your users, who may see empty folders that no longer serve any purpose. In this blog post, we will explain why this happens and how you can solve this problem by using a Power Automate flow.
 
-##Why are empty folders not deleted by retention policies?
+## Why are empty folders not deleted by retention policies?
 
 Retention policies in SharePoint work at the file level, not at the folder level. This means that when you apply a retention policy to a document library or a folder, only the files within that scope will be affected by the retention settings. The folders themselves are not considered as content by the retention policy, and therefore they are not deleted when their contents are removed.
 
 ![Image](/static/images/assets/RetentionPolicyFolders/Screenshot_1.png)
 
-##So How can you delete empty folders after applying retention policy?
+## So How can you delete empty folders after applying retention policy?
 
 One way to delete empty folders after applying retention policy is to use a Power Automate flow that runs after the retention period has been furfilled and checks for empty folders in your document libraries. The flow can then delete those folders.
 
