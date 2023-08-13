@@ -54,7 +54,28 @@ Now remove file name and add name from Json instead
 
 This will get the path of the attachment and the file name
 
-Now select SharePoint Connector and choose add attachment, select the new SharePoint List item you have created:
+Now select SharePoint Connector and choose Send an HTTP Request to SharePoint, select the Sharepoint site:
+
+```
+| Name         | Value                                                              |
+| ------------ | ------------------------------------------------------------------ |
+| Site Address | https://yourTenant.sharepoint.com/sites/yourSite                   |
+| Method       | POST                                                               |
+| Uri          | _api/web/lists/getbytitle('My Personal information')/items|
+| Headers      | Accept: application/json; odata=nometadata                         |
+| Headers      | content-type: application/json; odata=nometadata                   |
+| Body         |                                                                    |
+```
+
+```json
+{/
+	"__metadata": {
+		"type": "SP.Data.LogoUniverseListItem"
+	},
+	"Title": "Personal Information for XXX",
+	"ProfileImage": "{\"type\":\"thumbnail\",\"fileName\":\"@{items('Apply_to_each')['name']}\",\"fieldName\":\"ImageColumnName\",\"serverUrl\":\"https://avarante.sharepoint.com\",\"serverRelativeUrl\":\"\"/photosURL.jpeg\"}"
+}
+```
 
 The flow should look something like this
 
