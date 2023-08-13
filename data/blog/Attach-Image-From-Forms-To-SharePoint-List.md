@@ -68,12 +68,12 @@ Now select SharePoint Connector and choose Send an HTTP Request to SharePoint, s
 ```
 
 ```json
-{/
-	"__metadata": {
-		"type": "SP.Data.LogoUniverseListItem"
-	},
-	"Title": "Personal Information for XXX",
-	"ProfileImage": "{\"type\":\"thumbnail\",\"fileName\":\"@{items('Apply_to_each')['name']}\",\"fieldName\":\"ImageColumnName\",\"serverUrl\":\"https://avarante.sharepoint.com\",\"serverRelativeUrl\":\"\"/photosURL.jpeg\"}"
+{
+  "__metadata": {
+    "type": "SP.Data.LogoUniverseListItem"
+  },
+  "Title": "Power Automate",
+  "ProfileImage": "{\"type\":\"thumbnail\",\"fileName\":\"@{items('Apply_to_each')['name']}\",\"fieldName\":\"ImageColumnName\",\"serverUrl\":\"https://avarante.sharepoint.com\",\"serverRelativeUrl\":\"/Apps/Microsoft Forms/Untitled form/Question/@{items('Apply_to_each')['name']}\"}"
 }
 ```
 
