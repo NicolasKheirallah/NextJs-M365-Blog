@@ -59,3 +59,7 @@ Now select SharePoint Connector and choose add attachment, select the new ShareP
 The flow should look something like this
 
 ![Image](/static/images/assets/attachFilesFromForm/5.png)
+
+And that should do it:
+
+![Image](/static/images/assets/attachFilesFromForm/8.png)
