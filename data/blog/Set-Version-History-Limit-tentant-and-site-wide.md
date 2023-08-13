@@ -49,7 +49,7 @@ Set-PnPTenant -EnableAutoExpirationVersionTrim $false -MajorVersionLimit 100 -Ex
 
 ```
 
-Old lists Libraries need to be set to the default value
+Old lists Libraries need to be set to the new default value
 
 Site Level:
 
