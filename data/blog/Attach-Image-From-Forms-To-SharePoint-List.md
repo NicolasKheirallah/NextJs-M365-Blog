@@ -43,18 +43,13 @@ So a friend asked me the other day how she could build a simple contact-form whe
 
 9. Edit the flow and add Parse Json select Outputs as source and press generate from Sample and paste in the json from previous run that you just copied:
 
-10. Now select onedrive connector and choose: Get file content using path from Path.
+10. Now go into your onedrive copy the path
 
 Here you need to choose choose the Path for your form, it should be under:
 
-/Apps/Microsoft Forms/
+/Documents/Apps/Microsoft%20Forms
 
-Here you select previous uploaded file.
-Now remove file name and add name from Json instead
-
-This will get the path of the attachment and the file name
-
-Now select SharePoint Connector and choose Send an HTTP Request to SharePoint, select the Sharepoint site:
+11. Now select SharePoint Connector and choose Send an HTTP Request to SharePoint, select the Sharepoint site:
 
 ```
 | Name         | Value                                                              |
@@ -73,13 +68,13 @@ Now select SharePoint Connector and choose Send an HTTP Request to SharePoint, s
     "type": "SP.Data.LogoUniverseListItem"
   },
   "Title": "Power Automate",
-  "ProfileImage": "{\"type\":\"thumbnail\",\"fileName\":\"@{items('Apply_to_each')['name']}\",\"fieldName\":\"ImageColumnName\",\"serverUrl\":\"https://avarante.sharepoint.com\",\"serverRelativeUrl\":\"/Apps/Microsoft Forms/Untitled form/Question/@{items('Apply_to_each')['name']}\"}"
+  "ProfileImage": "{\"type\":\"thumbnail\",\"fileName\":\"@{items('Apply_to_each')['name']}\",\"fieldName\":\"ImageColumnName\",\"serverUrl\":\"https://avarante-my.sharepoint.com\",\"serverRelativeUrl\":\"/personal/admin_avarante_onmicrosoft_com/Documents/Apps/Microsoft%20Forms/Personal%20Information%20Form/Question/@{items('Apply_to_each')['name']}\"}"
 }
 ```
 
 The flow should look something like this
 
-![Image](/static/images/assets/attachFilesFromForm/5.png)
+![Image](/static/images/assets/attachFilesFromForm/9.png)
 
 And that should do it:
 
