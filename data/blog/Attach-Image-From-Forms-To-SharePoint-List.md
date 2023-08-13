@@ -43,6 +43,8 @@ So a friend asked me the other day how she could build a simple contact-form whe
 
 9. Edit the flow and add Parse Json select Outputs as source and press generate from Sample and paste in the json from previous run that you just copied:
 
+![Image](/static/images/assets/attachFilesFromForm/19.png)
+
 10. Now go into your onedrive copy the path
 
 Here you need to choose choose the Path for your form, it should be under:
