@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'Nicolas.kheirallah@gmail.com',
+  email: 'mailto:Nicolas.kheirallah@gmail.com',
   github: 'https://github.com/NicolasKheirallah',
   linkedin: 'https://www.linkedin.com/in/nicolas-kheirallah-39717690',
   locale: 'en-US',
