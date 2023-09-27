@@ -11,9 +11,12 @@ authors: ['default']
 
 ## Introduction
 
-As a SharePoint Architect and consultant with nearly 10 years of experience in creating and designing over 80 intranets for various clients. In this blogpost, I will share some things I've learned for a successfull implementation of a new Intranet, What the best practices for intranet design and what it entails, because I have seen many cases where the intranet solutions are not well-designed, scalable, or maintainable, and that lead to increased costs for upkeep and support.
+As a SharePoint Architect and consultant with nearly 10 years of experience in creating and designing over 80 intranets for various clients.
 
-So see these posts as a handbook if you ever get stuck and wondering what you should do or how to start
+Main goal if this blogpost, Is to teach what is required for a successfull implementation of a new Intranet,
+What the best practices for intranet design and what it entails, because I have seen many cases where the intranet solutions are not well-designed, scalable, or maintainable, and that lead to increased costs for upkeep and support.
+
+So see these posts as a handbook on how to approach things.
 
 ## What's needed to succeed
 
@@ -61,8 +64,10 @@ This is something that makes Viva Connections such a great tool! It allows users
 
 Another thing that users appreciate is having clear guidance on the purpose and use of different tools. For instance, in my case, SharePoint is for working and sharing information such as news, documents, and information in general, while Viva Engage is for community and culture especially erasing the boundaries of sharing data. So a department should have a Viva Engage community where they can chat and share information, as well as use the associated SharePoint site for news and so on. Teams are for project collaborations and personal chats.
 
-## Underlaying structure
+## Underlaying structure - The Base of an intelligent intranet
 
 The structure of an Intranet is a crucial factor that determines its effectiveness and usability. In my daily work, I see a lot of confusion and inconsistency in how to plan and implement an Intranet, how to use hub sites to create a coherent and logical hierarchy, and how to optimize them to enhance the information flow and user satisfaction. This leads to a lot of problems, as the Intranet should be able to adapt and evolve with the organization's needs, growth, and goals, without requiring major overhauls in the future. The structure is like the foundation of a house, and if it is not done well, it will collapse.
 
 Hubsites enable us to organize SharePoint sites based on the information context, rather than the site structure. For example, we can create a hub for HR and connect all the sites that are relevant to HR, such as policies, benefits, training, etc. By doing so, we can empower the HR team to manage their own hub navigation giving them more options, without relying on IT. We can also leverage the hub features to surface context-specific content, such as news from all the HR sites, or to conduct searches within the HR scope. However, I have observed that many users are not aware of or do not utilize this connection, and fail to take advantage.
+
+![Image](/static/images/assets/DesigningAnIntranet/EOrR55NX0AAXO4M.png 'Source: Microsoft')
