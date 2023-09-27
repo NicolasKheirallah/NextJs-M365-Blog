@@ -1,7 +1,7 @@
 ---
 date: '2023-09-27T02:59:22.412Z'
-title: Designing a modern intranet with Viva Connection in mind - Part 1
-description: This is will be multi-part a guide on how you should design and architect your intranet, the do's and dont's and best pratices.
+title: Designing an intelligent intranet with Viva Connection in mind - Part 1
+description: This is will be multi-part a guide on how you should design and architect your intelligent intranet, the do's and dont's and best pratices.
 tags: ['Viva Connection', 'SharePoint']
 summary: What is the best practice when using Viva goals
 authors: ['default']
