@@ -51,7 +51,9 @@ An intranet project in SharePoint requires a clear definition of the roles and r
 - IT: to provide input on technical requirements, security, integration, and maintenance.
 - CISO: to provide input on compliance, risk management, and data protection.
 
-An intranet in SharePoint is not a single entity, but a collection of sites, hubs, and pages that are owned and managed by various departments and teams. Each department or team has its own hub site, which serves as the main entry point and navigation hub for its content and services. The hub site owner is responsible for creating, maintaining, and governing the hub site and its associated sites.
+## Ownership
+
+As intranet in SharePoint is not a single entity, but a collection of sites, hubs, and pages that are owned and managed by various departments and teams. Each department or team has its own hub site, which serves as the main entry point and navigation hub for its content and services. The hub site owner is responsible for creating, maintaining, and governing the hub site and its associated sites.
 
 In addition to the hub site owners, there is also a need for a service owner for SharePoint and Viva Connections. The service owner is responsible for overseeing the overall strategy, design, and governance of the intranet platform. The service owner works with the hub site owners to ensure that the intranet meets the needs and expectations of the organization and its users. The service owner also coordinates the communication, training, and support for the intranet platform.
 
