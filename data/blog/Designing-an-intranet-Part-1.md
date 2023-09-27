@@ -34,15 +34,6 @@ To succeed when building an Intranet, these are a few things that are needed:
 
 - A dedicated team and stakeholders: The Intranet project should have a strong and committed team that includes representatives from different departments, roles, and levels of the organization. My preferred method of building a team for designing and building a teams
 
-A team of stakeholders should include these heads of departments:
-
-- Head of HR
-- Head of Communication
-- Head of IT
-- Head of CISO
-
-The team should have the necessary skills, resources, and authority to manage the project effectively. The team should also have a clear leader who can provide direction, guidance, and support throughout the project lifecycle.
-
 - A user-centric approach: The Intranet should be built with the users in mind. The team should conduct user research, surveys, interviews, and testing to understand the user's needs, preferences, and behaviors. The team should also involve the users in the design, development, and evaluation of the Intranet, and solicit their feedback and suggestions regularly. The Intranet should be user-friendly, intuitive, and accessible to all users.
 
 - A robust technology platform: The Intranet should be built on a reliable, secure, and scalable technology platform that can support the functionality, performance, and growth of the Intranet. The platform should also be compatible with the existing systems and applications of the organization, and allow for easy integration and customization. The platform should also enable the team to update and maintain the Intranet easily and efficiently.
@@ -53,7 +44,14 @@ A modern and intelligent intranet isn't owned by IT anymore but owned by large p
 
 ## Stakeholders
 
-One of the key aspects of planning and implementing an intranet in SharePoint is to define the roles and responsibilities of the different stakeholders involved. An intranet in SharePoint is not a single entity, but a collection of sites, hubs, and pages that are owned and managed by various departments and teams. Each department or team has its own hub site, which serves as the main entry point and navigation hub for its content and services. The hub site owner is responsible for creating, maintaining, and governing the hub site and its associated sites.
+An intranet project in SharePoint requires a clear definition of the roles and responsibilities of the different stakeholders involved. A stakeholder team should consist of representatives from the key departments that will use and benefit from the intranet. Ideally, these representatives should be the heads of their respective departments, but if that is not feasible, other members of the departments can also participate. The stakeholder team should have the necessary skills, resources, and authority to manage the project effectively. The stakeholder team should also have a clear leader who can provide direction, guidance, and support throughout the project lifecycle. Some of the departments that should be included in the stakeholder team are:
+
+- HR: to provide input on employee engagement, policies, benefits, training and other requirements.
+- Communication: to provide input on branding, content, design, and user feedback.
+- IT: to provide input on technical requirements, security, integration, and maintenance.
+- CISO: to provide input on compliance, risk management, and data protection.
+
+An intranet in SharePoint is not a single entity, but a collection of sites, hubs, and pages that are owned and managed by various departments and teams. Each department or team has its own hub site, which serves as the main entry point and navigation hub for its content and services. The hub site owner is responsible for creating, maintaining, and governing the hub site and its associated sites.
 
 In addition to the hub site owners, there is also a need for a service owner for SharePoint and Viva Connections. The service owner is responsible for overseeing the overall strategy, design, and governance of the intranet platform. The service owner works with the hub site owners to ensure that the intranet meets the needs and expectations of the organization and its users. The service owner also coordinates the communication, training, and support for the intranet platform.
 
