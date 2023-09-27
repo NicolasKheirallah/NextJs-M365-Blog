@@ -20,7 +20,7 @@ So see these posts as a handbook on how to approach things.
 
 ## Getting started
 
-There are a few things that are needed to succeed when building your Intranet, The way you want to drive this kind of project is to have a a flexible and iterative approach. As such a project no matter the size of the company does not have to be developed for a year before being released but you can release it in stages and have continuous improvements. As you want to get the user's feedback, engagement and implement it as we want this to grow and improve organically.
+There are a few things that are needed to succeed when building your Intranet, The way you want to drive this kind of project is to have a a flexible and iterative approach. As such a project no matter the size of the company does not have to be developed for a year before being released but you can release it in phases and make continuous improvements based on user feedback and engagement. This way, you can create an Intranet that grows and improves organically, meeting the needs and expectations of your users.
 
 This DOES mean that you need to have a strategy, coordination, and execution .
 
