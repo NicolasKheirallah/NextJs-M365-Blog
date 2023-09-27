@@ -1,5 +1,5 @@
 ---
-date: '2023-05-12T11:14:22.412Z'
+date: '2023-09-27T02:59:22.412Z'
 title: Designing a modern intranet with Viva Connection in mind - Part 1
 description: This is will be multi-part a guide on how you should design and architect your intranet, the do's and dont's and best pratices.
 tags: ['Viva Connection', 'SharePoint']
