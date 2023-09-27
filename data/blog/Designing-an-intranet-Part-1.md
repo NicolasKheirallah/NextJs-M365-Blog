@@ -61,7 +61,7 @@ This is something that makes Viva Connections is such a great tool! It allows us
 
 Another thing that users appreciate is having clear guidance on the purpose and use of different tools. For instance, in my case, SharePoint is for working and sharing information such as news, documents, information in general, while Viva Engage is for community and culture especially erasing the bounders of sharing data. So a department should have a Viva Engage community where they can chat and share information, as well as use the associated SharePoint site for news and so on. And Teams is for projects and collaborations and personal chats.
 
-## Underlaying strcuture
+## Underlaying structure
 
 The structure of an Intranet is a crucial factor that determines its effectiveness and usability. In my daily work, I see alot of confusion and inconsistency in how to plan and implement an Intranet, how to use hubsites to create a coherent and logical hierarchy, and how to optimize them to enhance the information flow and user satisfaction. This leads to alot of problems, as the Intranet should be able to adapt and evolve with the organisation's needs, growth and goals, without requiring major overhauls in the future. The structure is like a foundation of an an house, and if it is not done well, it will collapse.
 
