@@ -18,13 +18,15 @@ What the best practices for intranet design and what it entails, because I have 
 
 So see these posts as a handbook on how to approach things.
 
+## Getting started
+
+There are a few things that are needed to succeed when building your Intranet, The way you want to drive this kind of project is to have a a flexible and iterative approach. As such a project no matter the size of the company does not have to be developed for a year before being released but you can release it in stages and have continuous improvements. As you want to get the user's feedback, engagement and implement it as we want this to grow and improve organically.
+
+This DOES mean that you need to have a strategy, coordination, and execution .
+
+As the Intranet is the campfire that connects employees within an organization and facilitates communication, collaboration, and information sharing. You want your users to come here, get the information that they need with as few clicks as possible, and not be a dreaded process to do so! We want to get rid of the old stigma that the Intranet is something you don't have to visit. This is where Viva connection comes into play.
+
 ## What's needed to succeed
-
-There are a few things that are needed to succeed when building your Intranet, The way you want to drive this kind of project is to have a a flexible and iterative approach. As such a project no matter the size of the company does not have to be developed for a year before being released but you can release it in stages and have continuous improvements. You want to get the user's feedback and implement it as we want this to grow and improve organically.
-
-This doesn't mean that it doesn't require careful planning, coordination, and execution because it does.
-
-As the Intranet is the hub that connects employees within an organization and facilitates communication, collaboration, and information sharing. You want your users to come here, get the information that they need with as few clicks as possible, and not be a dreaded process to do so! We want to get rid of the old stigma that the Intranet is something you don't have to visit. This is where Viva connection comes into play.
 
 To succeed when building an Intranet, these are a few things that are needed:
 
@@ -42,10 +44,12 @@ A team of stakeholders should include these heads of departments:
 The team should have the necessary skills, resources, and authority to manage the project effectively. The team should also have a clear leader who can provide direction, guidance, and support throughout the project lifecycle.
 
 - A user-centric approach: The Intranet should be built with the users in mind. The team should conduct user research, surveys, interviews, and testing to understand the user's needs, preferences, and behaviors. The team should also involve the users in the design, development, and evaluation of the Intranet, and solicit their feedback and suggestions regularly. The Intranet should be user-friendly, intuitive, and accessible to all users.
+
 - A robust technology platform: The Intranet should be built on a reliable, secure, and scalable technology platform that can support the functionality, performance, and growth of the Intranet. The platform should also be compatible with the existing systems and applications of the organization, and allow for easy integration and customization. The platform should also enable the team to update and maintain the Intranet easily and efficiently.
+
 - A continuous improvement process: The Intranet should not be seen as a one-time project, but as an ongoing process that requires constant monitoring, evaluation, and improvement. The team should measure the usage, impact, and satisfaction of the Intranet, and identify the strengths, weaknesses, opportunities, and threats of the Intranet. The team should also implement changes and enhancements based on the data, feedback, and best practices of the Intranet.
 
-Stakeholders! A modern intranet isn't owned by IT anymore. It's owned by the whole organization and each part owns its own space.
+A modern and intelligent intranet isn't owned by IT anymore but owned by large part by the whole organization and each part owns its own space.
 
 ## Stakeholders
 
