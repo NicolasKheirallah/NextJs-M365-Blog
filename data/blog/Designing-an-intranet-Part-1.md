@@ -9,10 +9,10 @@ authors: ['default']
 
 ## Introduction
 
-As a SharePoint Architect and consultant with nearly 10 years of experience in creating and designing over 80 intranets for various clients.
+As a SharePoint Architect and consultant, my main focus has is designing Intranet for years, I've design intranet from everything from small companies to huge internationall ones.
 
-Main goal if this blogpost, Is to teach what is required for a successfull implementation of a new Intranet,
-What the best practices for intranet design and what it entails, because I have seen many cases where the intranet solutions are not well-designed, scalable, or maintainable, and that lead to increased costs for upkeep and support.
+Main goal of this blogpost is to teach what is required for a successfull implementation of a new Intranet,
+what the best practices for intranet design and what it entails, because I have seen many cases where the intranet solutions are really not well-designed, scalable, nor maintainable, and that lead to frustrations by the users, increased costs for upkeep and support and something that isn't scalable at all.
 
 So see these posts as a handbook on how to approach things.
 
