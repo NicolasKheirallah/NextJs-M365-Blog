@@ -46,9 +46,23 @@ Stakeholders! An modern intranet isn't owned by IT anymore. It's owned by the wh
 
 ## Stakeholders
 
-Stakeholders in designing an intranet should be
-Communication Department
+One of the key aspects of planning and implementing an intranet in SharePoint is to define the roles and responsibilities of the different stakeholders involved. An intranet in SharePoint is not a single entity, but a collection of sites, hubs, and pages that are owned and managed by various departments and teams. Each department or team has its own hub site, which serves as the main entry point and navigation hub for their content and services. The hub site owner is responsible for creating, maintaining, and governing the hub site and its associated sites.
+
+In addition to the hub site owners, there is also a need for a service owner for SharePoint and Viva Connections. The service owner is responsible for overseeing the overall strategy, design, and governance of the intranet platform. The service owner works with the hub site owners to ensure that the intranet meets the needs and expectations of the organization and its users. The service owner also coordinates the communication, training, and support for the intranet platform.
+
+For example, the communication department may own the landing page and the country pages of the intranet. The landing page is the first page that users see when they access the intranet, and it provides an overview of the organization's vision, values, news, and events. The country pages are sub-sites that provide localized information and resources for each country or region where the organization operates. The communication department is responsible for creating and updating these pages, as well as ensuring that they are consistent with the organization's brand and identity.
+
+The HR department may own an HR hub site, which contains information and services related to human resources, such as employee handbook, policies, benefits, payroll, performance management, learning and development, etc. The HR department is responsible for creating and updating these pages, as well as ensuring that they comply with the legal and regulatory requirements of each country or region.
 
 ## Users in mind
 
+One of the key aspects of intranet design is understanding what users really value as well as requiring a deep understanding of what users really need, and how to deliver information that is relevant, accessible and convenient for them. This is something I've seen been forgotten when designing intranets.
+This is something that makes Viva Connections is such a great tool! It allows users to access the intranet with minimal clicks and provides a comprehensive overview with Viva Home especially on the go.
+
+Another thing that users appreciate is having clear guidance on the purpose and use of different tools. For instance, in my case, SharePoint is for working and sharing information such as news, documents, information in general, while Viva Engage is for community and culture especially erasing the bounders of sharing data. So a department should have a Viva Engage community where they can chat and share information, as well as use the associated SharePoint site for news and so on. And Teams is for projects and collaborations and personal chats.
+
 ## Underlaying strcuture
+
+The structure of an Intranet is a crucial factor that determines its effectiveness and usability. In my daily work, I see alot of confusion and inconsistency in how to plan and implement an Intranet, how to use hubsites to create a coherent and logical hierarchy, and how to optimize them to enhance the information flow and user satisfaction. This leads to alot of problems, as the Intranet should be able to adapt and evolve with the organisation's needs, growth and goals, without requiring major overhauls in the future. The structure is like a foundation of an an house, and if it is not done well, it will collapse.
+
+Hubsites enable us to organize SharePoint sites based on the information context, rather than the site structure. For example, we can create a hub for HR and connect all the sites that are relevant to HR, such as policies, benefits, training, etc. By doing so, we can empower the HR team to manage their own hub navigation giving them more options, without relying on IT. We can also leverage the hub features to surface context-specific content, such as news from all the HR sites, or to conduct searches within the HR scope. However, I have observed that many users are not aware of or do not utilize this connection, and fail to take advantage.
