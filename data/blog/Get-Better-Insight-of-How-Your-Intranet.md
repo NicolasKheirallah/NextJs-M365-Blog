@@ -29,7 +29,8 @@ So Clarity, we can track how users interact with your intranet pages, identify c
 ![Image](/static/images/assets/Clarity/7.png)
 
 4. Download joaoferreira module for Clarity: https://github.com/joaoferreira/microsoftclarity/tree/main/sharepoint/solution
-   The file should be called "Clarity.sppkg"
+
+The file should be called "Clarity.sppkg"
 
 5. Go to your SharePoint Admin and go into the Appcatalog, You might need to create one if you have not.
 
@@ -64,6 +65,7 @@ Example:
 ![Image](/static/images/assets/Clarity/12.png)
 
 - Identify and fix issues with metrics and reports: Clarity provides you with various metrics and reports that help you measure the performance and usability of your intranet. You can see how many users visit your intranet, how long they stay, how often they return, and how satisfied they are. You can also see how many errors, rage clicks, dead clicks, or excessive scrolling occur on your intranet pages, and which pages have the most issues.
-  ![Image](/static/images/assets/Clarity/11.png)
+
+![Image](/static/images/assets/Clarity/11.png)
 
 - \*Test and optimize your intranet with experiments. Experiments allow you to test different versions of your intranet pages and see which one performs better. You can create experiments based on various goals, such as clicks, conversions, engagement, or satisfaction. You can also use Clarity's insights to inform your experiments and make data-driven decisions.
