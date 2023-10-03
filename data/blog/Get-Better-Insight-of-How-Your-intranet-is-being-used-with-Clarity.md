@@ -26,7 +26,7 @@ So Clarity, we can track how users interact with your intranet pages, identify c
 3. Press get "tracking code" and copy the tracking code that is generated for your project and paste it into a text file for now.
    ![Image](/static/images/assets/Clarity/7.png)
 
-4. Download Joan module for Clarity: https://github.com/joaoferreira/microsoftclarity/tree/main/sharepoint/solution
+4. Download joaoferreira module for Clarity: https://github.com/joaoferreira/microsoftclarity/tree/main/sharepoint/solution
    The file should be called "Clarity.sppkg"
 
 5. Go to your SharePoint Admin and go into the Appcatalog, You might need to create one if you have not.
