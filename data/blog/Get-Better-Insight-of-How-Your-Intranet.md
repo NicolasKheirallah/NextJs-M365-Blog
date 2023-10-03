@@ -40,7 +40,10 @@ So Clarity, we can track how users interact with your intranet pages, identify c
 8. Add your ClarityID here, it should be on
 
 Example:
+
+```
 {"clarityID":"eiw3c7oiy1"}
+```
 
 8. Wait for some data to be collected by Microsoft Clarity. It may take up to 24 hours for the data to appear on your dashboard.
    ![Image](/static/images/assets/Clarity/8.png)
