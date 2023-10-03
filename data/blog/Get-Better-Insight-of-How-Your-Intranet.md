@@ -20,24 +20,28 @@ So Clarity, we can track how users interact with your intranet pages, identify c
 ![Image](/static/images/assets/Clarity/1.png)
 
 2. Create a new project and enter your website name and URL. You can also choose to enable or disable features such as heatmaps, session recordings, and insights.
-   ![Image](/static/images/assets/Clarity/2.png)
-   ![Image](/static/images/assets/Clarity/3.png)
+
+![Image](/static/images/assets/Clarity/2.png)
+![Image](/static/images/assets/Clarity/3.png)
 
 3. Press get "tracking code" and copy the tracking code that is generated for your project and paste it into a text file for now.
-   ![Image](/static/images/assets/Clarity/7.png)
+
+![Image](/static/images/assets/Clarity/7.png)
 
 4. Download joaoferreira module for Clarity: https://github.com/joaoferreira/microsoftclarity/tree/main/sharepoint/solution
    The file should be called "Clarity.sppkg"
 
 5. Go to your SharePoint Admin and go into the Appcatalog, You might need to create one if you have not.
-   ![Image](/static/images/assets/Clarity/4.png)
-   ![Image](/static/images/assets/Clarity/5.png)
+
+![Image](/static/images/assets/Clarity/4.png)
+
+![Image](/static/images/assets/Clarity/5.png)
 
 6. Upload the SPPKG file and install it. Make sure it's installed as a tenant wide extension
 
 7. Press tenant wide Extensions and press open:
-   ![Image](/static/images/assets/Clarity/6.png)
-8. Add your ClarityID here, it should be on
+
+![Image](/static/images/assets/Clarity/6.png) 8. Add your ClarityID here, it should be on
 
 Example:
 
@@ -46,17 +50,20 @@ Example:
 ```
 
 8. Wait for some data to be collected by Microsoft Clarity. It may take up to 24 hours for the data to appear on your dashboard.
-   ![Image](/static/images/assets/Clarity/8.png)
+
+![Image](/static/images/assets/Clarity/8.png)
+
 9. Explore the different reports and features that Microsoft Clarity offers such as:
 
 - Heatmaps: Heatmaps will show you where users click, scroll, and move their mouse on your intranet pages. You can use this data to understand what users are looking for, what they find engaging, and what they ignore or miss. You can also compare different segments of users, such as by device, location, or role, to see how their behavior differs.
-  ![Image](/static/images/assets/Clarity/13.png)
 
--Recordings: Recordings let you watch how users navigate your intranet, from the moment they enter to the moment they leave. You can see how users interact with your navigation, search, forms, and other elements on your intranet. You can also filter recordings by various criteria, such as page views, time spent, errors, or feedback.
+![Image](/static/images/assets/Clarity/13.png)
+
+- Recordings: Recordings let you watch how users navigate your intranet, from the moment they enter to the moment they leave. You can see how users interact with your navigation, search, forms, and other elements on your intranet. You can also filter recordings by various criteria, such as page views, time spent, errors, or feedback.
 
 ![Image](/static/images/assets/Clarity/12.png)
 
 - Identify and fix issues with metrics and reports: Clarity provides you with various metrics and reports that help you measure the performance and usability of your intranet. You can see how many users visit your intranet, how long they stay, how often they return, and how satisfied they are. You can also see how many errors, rage clicks, dead clicks, or excessive scrolling occur on your intranet pages, and which pages have the most issues.
   ![Image](/static/images/assets/Clarity/11.png)
 
-- Test and optimize your intranet with experiments. Experiments allow you to test different versions of your intranet pages and see which one performs better. You can create experiments based on various goals, such as clicks, conversions, engagement, or satisfaction. You can also use Clarity's insights to inform your experiments and make data-driven decisions.
+- \*Test and optimize your intranet with experiments. Experiments allow you to test different versions of your intranet pages and see which one performs better. You can create experiments based on various goals, such as clicks, conversions, engagement, or satisfaction. You can also use Clarity's insights to inform your experiments and make data-driven decisions.
