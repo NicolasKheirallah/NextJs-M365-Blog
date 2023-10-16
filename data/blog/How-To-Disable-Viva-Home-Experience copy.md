@@ -27,32 +27,32 @@ Well there's several reasons you might want this, Your organisation might not ha
 
 https://admin.microsoft.com/#/featureexplorer
 
-![Image](/static/images/assets/\VivaHomeSetup/1.png)
+![Image](/static/images/assets/VivaHomeSetup/1.png)
 
 2. Press Microsoft Viva
-   ![Image](/static/images/assets/\VivaHomeSetup/2.png)
+   ![Image](/static/images/assets/VivaHomeSetup/2.png)
 
 3. Choose Connections
-   ![Image](/static/images/assets/\VivaHomeSetup/3.png)
+   ![Image](/static/images/assets/VivaHomeSetup/3.png)
 
 4. Press Create and Manage Viva Connection Experiences, you can have more than one but you will need a premium license for multiple homesites.
-   ![Image](/static/images/assets/\VivaHomeSetup/4.png)
+   ![Image](/static/images/assets/VivaHomeSetup/4.png)
 
 5. Press Create New
-   ![Image](/static/images/assets/\VivaHomeSetup/5.png)
+   ![Image](/static/images/assets/VivaHomeSetup/5.png)
 
 6. Choose Create a Connection Experience, this will create one without a sharepoint site.
-   ![Image](/static/images/assets/\VivaHomeSetup/6.png)
+   ![Image](/static/images/assets/VivaHomeSetup/6.png)
 
 7. Name it and give it a description
-   ![Image](/static/images/assets/\VivaHomeSetup/7.png)
+   ![Image](/static/images/assets/VivaHomeSetup/7.png)
 
 8. Press Create
-   ![Image](/static/images/assets/\VivaHomeSetup/8.png)
+   ![Image](/static/images/assets/VivaHomeSetup/8.png)
 
 9. It should show up, if you have a another Connection experience you can select the order.
-   ![Image](/static/images/assets/\VivaHomeSetup/9.png)
+   ![Image](/static/images/assets/VivaHomeSetup/9.png)
 
 10. Now visit you connection app and you should have it .
 
-![Image](/static/images/assets/\VivaHomeSetup/10.png)
+![Image](/static/images/assets/VivaHomeSetup/10.png)
