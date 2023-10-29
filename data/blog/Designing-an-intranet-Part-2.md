@@ -29,6 +29,12 @@ So, SharePoint Should be your intranet and the landing-page for the Intranet. My
 
 I recommend also that the landing page of the intranet Is an Hub and is also the central part for the whole organization even if it's conglomerate or you have multiple companies within a tenant. As this will create culture but also create a less we against them.
 
+[![Image](https://learn.microsoft.com/en-us/viva/media/connections/vc-vs-home-site-venn.png 'Homesite and Connections')](https://learn.microsoft.com/en-us/viva/connections/viva-connections-overview)
+
+#### Viva Amplify
+
+#### Viva Pulse
+
 ### Hubs
 
 So a hub-site is a concept in SharePoint that can be a bit hard do grasp! and this is something I want to clear up, as this is one of the most important configurations that you do in designing your employee experience
