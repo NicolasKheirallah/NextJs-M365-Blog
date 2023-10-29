@@ -7,29 +7,29 @@ summary: This is will be multi-part a guide on how you should design and archite
 authors: ['default']
 ---
 
-## Introduction
+# Introduction
 
 So in previous post we went through the preparations, mindset needed as well as touching a bit about the underlying structure. So in this post we will dig deeper and go a bit more of logic, details and when to use different technologies!
 
-## Clear Definitions - What is used where
+# Clear Definitions - What is used where
 
 One of the challenges that many organizations face is the lack of clarity and guidance on how to use different tools and platforms for communication and collaboration. This causes a lot confusion, frustration and inefficiency among users. To avoid this, the organization needs to create a clear definition of when to use SharePoint, Viva Engage and Teams, and how they complement each other. As these are powerful tools within the Microsoft 365 ecosystem, each with distinct use cases so knowing when to use each tool and how they complement each other is crucial for creating an efficient employee experience platform thats scalable and that can grow organically
 
 So we will try overcome these challenges in this blog-post with examples to make clear understand how everything is designed together.
 
-## What to use where:
+# What to use where:
 
 SharePoint plays a pivotal role as the backbone of the employee experience platform, providing the infrastructure for collaboration and content management. It is the central repository for documents, data, and information, making it the cornerstone of the entire ecosystem. The success and effectiveness of the employee experience heavily depend on how SharePoint is architecturally designed and implemented from the start. This is also where usually see most of the with the implementation fail. The reasoning being those who are designing the architecture of the intranet/EXP don't have a clear understanding on how everything works together.
 
 So when and for what do we use SharePoint ?
 
-#### Intranet
+### Intranet
 
 So, SharePoint Should be your intranet and the landing-page for the Intranet. My recommendation is to build it as a compliment to Viva Connection Home, This will make it easier for users to get the information with as few clicks as possible! As they can visit the intranet from Teams but also Thanks to Viva Connection Home they can relevant information for them quickly! So I always recommend to have it enabled both on Desktop and Mobile. And for Information that isn't Viva home or important links, they can go into to the intranet. The intranet should also be seen as the culture hub of organization, this is where the user will find everything that relevant for them but also who we are, what our goals are as well as getting information that's relevant for them.
 
 I recommend also that the landing page of the intranet Is an Hub and is also the central part for the whole organization even if it's conglomerate or you have multiple companies within a tenant. As this will create culture but also create a less we against them.
 
-#### Hubs
+### Hubs
 
 So a hub-site is a concept in SharePoint that can be a bit hard do grasp! and this is something I want to clear up, as this is one of the most important configurations that you do in designing your employee experience
 
@@ -43,7 +43,7 @@ Hub sites are flexible and dynamic. You can change the name, logo, navigation, o
 
 So see hub-sites as the campfire which all other sites sit together around and share information! And is a key part of having intelligent and scalable intranet and employee experience!
 
-#### Countries, Cities & Departments
+### Countries, Cities & Departments
 
 This topic is something that I've seen most implementations fail at and how to create but also manage Countries, Cities & Departments!
 The main issue is the choice of the wrong tooling but also lack of understanding on how information should flow and how user interact.
