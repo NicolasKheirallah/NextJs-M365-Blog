@@ -1,5 +1,5 @@
 ---
-date: '2023-10-29T02:59:22.412Z'
+date: '2023-10-29T20:59:22.412Z'
 title: Designing an intelligent intranet with Viva in mind - Part 2
 description: This is the second part of a guide on how you should design and architect your intelligent intranet, the do's and dont's and best practices.
 tags: ['Viva', Viva Connections, 'SharePoint']
