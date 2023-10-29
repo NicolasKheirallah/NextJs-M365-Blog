@@ -33,7 +33,17 @@ I recommend also that the landing page of the intranet Is an Hub and is also the
 
 #### Viva Amplify
 
+Viva Amplify is a must have tool to simplify communications, inform employees, and inspire action. As it helps leaders and communicators to create and manage effective communication campaigns for their employees.
+
+Viva Amplify allows them to schedule, publish, and track messages across multiple channels and groups in Microsoft 365, such as Teams, SharePoint, Yammer, and Outlook. Viva Amplify also provides writing guidance via copilot and metrics to improve message resonance and engagement.
+
+[![Image](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/514912i59ADB76B90FB03DF/image-dimensions/2500?v=v2&px=-1 'Viva Amplify')](https://techcommunity.microsoft.com/t5/viva-amplify-blog/introducing-microsoft-viva-amplify-now-available-worldwide/ba-p/3949636)
+
 #### Viva Pulse
+
+Viva Pulse is an amazing feedback tool that I highly recommend every organization to use. It allows Communication,HR, managers and team leaders to send brief surveys to their teams or projects using Microsoft Teams or the web. The surveys are based on research-backed templates that can be customized to suit different needs and topics. The results are analyzed and presented in a confidential and aggregated way, with sentiment analysis and suggested actions. Viva Pulse helps managers and team leaders understand their teams' needs, challenges, and recommendations, and take action when it matters.
+
+[![Image](https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2022/09/Viva-Pulse-720p.gif 'Viva Pulse')](https://www.microsoft.com/en-us/microsoft-365/blog/2022/09/22/empower-and-energize-employees-with-microsoft-viva/)
 
 ### Hubs
 
