@@ -49,6 +49,8 @@ Hub sites are flexible and dynamic. You can change the name, logo, navigation, o
 
 So see hub-sites as the campfire which all other sites sit together around and share information! And is a key part of having intelligent and scalable intranet and employee experience!
 
+[![Image](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/205306i4E491AD65E4EB835/image-dimensions/2500?v=v2&px=-1 'Hubs')](https://learn.microsoft.com/en-us/sharepoint/information-architecture-modern-experience)
+
 ### Countries, Cities & Departments
 
 This topic is something that I've seen most implementations fail at and how to create but also manage Countries, Cities & Departments!
