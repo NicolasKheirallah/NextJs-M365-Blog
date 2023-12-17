@@ -9,13 +9,13 @@ authors: ['default']
 
 # Introduction
 
-I've had the distinct honor of working for a company that is one of the few partners globally in the Jumpstart program, allowing me firsthand access to Copilot and the opportunity to deploy it for clients. Copilot is a transformative tool that has the potential to revolutionize productivity and M365 usage. With my extensive experience in SharePoint, I fully comprehend the significance of organizing and managing data effectively to empower Copilot to tap into and analyze the most pertinent and valuable information. In this blog, I'll share some of my experiences implementing Copilot for clients.
+I've had the distinct honor of working for a company that is one of the few partners globally in the Jumpstart program, allowing me firsthand access to Copilot and the opportunity to deploy it for clients. Copilot is a transformative tool that has the potential to revolutionize productivity in an organization. With my extensive experience in SharePoint, I great comprehension of the significance of organizing and managing data effectively to empower Copilot to tap into and analyze the most pertinent and valuable information. In this blog, I'll share some of my experiences implementing Copilot for clients.
 
 Copilot is not simply a smart assistant, it's a formidable partner that can assist you in accomplishing more with less effort."
 
 ## What is Copilot and why should I care?
 
-So there's 150+ different copilots but they are group into three different SKUs:
+So there's 150+ different copilots but they are group into Four different SKUs:
 
 ![Image](/static/images/assets/getstartedwithcopilot/SKU-lineup-2048x1085.png)
 
