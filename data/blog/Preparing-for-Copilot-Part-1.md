@@ -15,9 +15,19 @@ Copilot is not simply a smart assistant, it's a formidable partner that can assi
 
 ## What is Copilot and why should I care?
 
-Microsoft 365 Copilot is a generative AI assistant that is integrated into all M365, such as Word, Excel, PowerPoint, and Outlook. It helps can users in various ways depending on the product but for example: suggesting text, formatting, as well as completing tasks and generating content.
+So there's 150+ different copilots but they are group into three different SKUs:
 
-Copilot can handle many of the tedious tasks that you may encounter every day, such as formatting text, creating tables, and generating code. This can save you time and energy to focus on more creative and strategic work.
+![Image](/static/images/assets/getstartedwithcopilot/SKU-lineup-2048x1085.png)
+
+We will mainly be focusing on M365 Copilot, as the other two is included in your licensing.
+
+Microsoft 365 Copilot is more than just a tool, it is a partner that helps you to achieve your goal as it's a generative AI assistant that is integrated into all M365, such as Word, Excel, PowerPoint, Teams Outlook etc. It helps can users in various ways depending on the product but for example: suggesting text, formatting, as well as completing tasks and generating content.
+![Image](/static/images/assets/getstartedwithcopilot/Microsoft-365-Copilot-2-1024x554.jpg)
+
+Copilot does it by gather data from various sources:
+![Image](/static/images/assets/getstartedwithcopilot/Microsoft-365-Copilot-3-1024x554.jpg)
+
+This makes it so that Copilot can handle many of the tedious tasks that you may encounter every day, such as formatting text, creating tables, and generating code. This can save you time and energy to focus on more creative and strategic work.
 
 For example:
 
@@ -27,8 +37,6 @@ For example:
 - In Outlook, Copilot can help you compose emails, find contacts, and even schedule meetings for you and remind you relevant emails.
 
 Copilot will also enhance your productivity as it can help you to create content more efficiently and accurately by providing you with suggestions for text, formatting, and code. This can help you to deliver higher-quality work in less time.
-
-Microsoft 365 Copilot is more than just a tool, it is a partner that helps you to achieve your goals.
 
 ## What can Copilot do for us as an organization?
 
