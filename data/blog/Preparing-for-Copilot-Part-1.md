@@ -23,12 +23,15 @@ We will mainly be focusing on M365 Copilot, as the other two is included in your
 
 Microsoft 365 Copilot is more than just a tool, it is a partner that helps you to achieve your goal as it's a generative AI assistant that is integrated into all M365, such as Word, Excel, PowerPoint, Teams Outlook etc. It helps can users in various ways depending on the product but for example: suggesting text, formatting, as well as completing tasks and generating content.
 
+Copilot does it by combines data from various sources to give you the best possible feedback:
+
 ![Image](/static/images/assets/getstartedwithcopilot/Microsoft-365-Copilot-2-1024x554.jpg)
 
-Copilot does it by gather data from various sources:
+This makes it so that Copilot can handle many of the tedious tasks that you may encounter every day and in application you use everyday, such as Word, teams, Excel and outlook.
+
 ![Image](/static/images/assets/getstartedwithcopilot/Microsoft-365-Copilot-3-1024x554.jpg)
 
-This makes it so that Copilot can handle many of the tedious tasks that you may encounter every day, such as formatting text, creating tables, and generating code. This can save you time and energy to focus on more creative and strategic work.
+Here copilot can help with formatting text, creating tables, and generating Email. This can save you time and energy to focus on more creative and strategic work.
 
 For example:
 
