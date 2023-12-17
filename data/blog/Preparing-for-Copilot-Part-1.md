@@ -22,6 +22,7 @@ So there's 150+ different copilots but they are group into Four different SKUs:
 We will mainly be focusing on M365 Copilot, as the other two is included in your licensing.
 
 Microsoft 365 Copilot is more than just a tool, it is a partner that helps you to achieve your goal as it's a generative AI assistant that is integrated into all M365, such as Word, Excel, PowerPoint, Teams Outlook etc. It helps can users in various ways depending on the product but for example: suggesting text, formatting, as well as completing tasks and generating content.
+
 ![Image](/static/images/assets/getstartedwithcopilot/Microsoft-365-Copilot-2-1024x554.jpg)
 
 Copilot does it by gather data from various sources:
