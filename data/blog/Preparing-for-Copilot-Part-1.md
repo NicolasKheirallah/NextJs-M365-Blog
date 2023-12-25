@@ -1,7 +1,7 @@
 ---
 date: '2023-12-13T12:54:01.975Z'
 title: Preparing for Copilot - Part one - Getting started
-description: We will go through what needed organizational when planning to start with copilot!
+description: We will go through what needed organizational when planning to start with Copilot!
 tags: ['SharePoint', 'Copilot']
 summary: A blog series on what needed do to get started Copilot
 authors: ['default']
@@ -44,7 +44,7 @@ Copilot will also enhance your productivity as it can help you create content mo
 
 Copilot for Microsoft 365 is not just a productivity tool; it's a strategic investment that can bring a wealth of benefits to organizations of all sizes. The tangible ROI of Copilot can be seen in the real-world examples of organizations that have implemented it.
 
-An article about the ROI: [Link to article: <https://www.microsoft.com/en-us/worklab/work-trend-index/copilots-earliest-users-teach-us-about-generative-ai-at-work>]
+An article about the ROI: [Link to Article](https://www.microsoft.com/en-us/worklab/work-trend-index/copilots-earliest-users-teach-us-about-generative-ai-at-work>)
 
 Here are some examples that demonstrate how Copilot has accelerated productivity, enhanced efficiency, and fueled innovation, leading to measurable business outcomes:
 
