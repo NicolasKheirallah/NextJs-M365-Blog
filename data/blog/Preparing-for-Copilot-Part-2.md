@@ -1,7 +1,7 @@
 ---
 date: '2023-12-25T00:54:01.975Z'
 title: Preparing for Copilot - Part two - Prep work!
-description: We will go through what needed organizational when planning to start with copilot!
+description: We will go through what kind of prep work an organizational needs to do before starting with copilot!
 tags: ['SharePoint', 'Copilot']
 summary: A blog series on what needed do to get started Copilot
 authors: ['default']
@@ -27,13 +27,13 @@ As Copilot makes extensive use of the Graph API to access data from Internal sou
 
 Here's some examples of the different data sources that copilot uses out of the box:
 
-- Microsoft Graph: This is a unified API that connects to data from various Microsoft 365 services, such as Outlook, Teams, SharePoint, OneDrive, and more. M365 copilot uses Microsoft Graph to access the user's calendar, email, contacts, files, chats, and other information that can help the user manage their tasks and projects.
+- **Microsoft Graph**: This is a unified API that connects to data from various Microsoft 365 services, such as Outlook, Teams, SharePoint, OneDrive, and more. M365 copilot uses Microsoft Graph to access the user's calendar, email, contacts, files, chats, and other information that can help the user manage their tasks and projects.
 
-- Bing Search: M365 copilot uses Bing Search to find relevant information and resources for the user's queries ny querying web pages, images, videos, news, and other online content.
+- **Bing Search**: M365 copilot uses Bing Search to find relevant information and resources for the user's queries ny querying web pages, images, videos, news, and other online content.
 
-- Azure Cognitive Services: This is a collection of AI-powered services that enable M365 copilot to perform natural language processing, speech recognition, computer vision, and other cognitive tasks. M365 copilot uses Azure Cognitive Services to analyze the user's voice, text, images, and videos, and provide relevant feedback and suggestions.
+- **Azure Cognitive Services**: This is a collection of AI-powered services that enable M365 copilot to perform natural language processing, speech recognition, computer vision, and other cognitive tasks. M365 copilot uses Azure Cognitive Services to analyze the user's voice, text, images, and videos, and provide relevant feedback and suggestions.
 
-- Leveraging Plugins: Plugins are a key enabler for connecting Copilot to external data. They provide live access to external services without the need for pre-indexing data. This means that Copilot can retrieve the latest information and respond to your prompts in real time:
+- **Leveraging Plugins**: Plugins are a key enabler for connecting Copilot to external data. They provide live access to external services without the need for pre-indexing data. This means that Copilot can retrieve the latest information and respond to your prompts in real time:
 
   - OpenAI Plugins: Access external APIs and data using a simple YAML file interface.
 
