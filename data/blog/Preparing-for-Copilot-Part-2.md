@@ -18,8 +18,9 @@ And this is what I'm going to deeper in this post!
 ## Identify your sources
 
 So, Copilot gathers its data from a variety of sources, including your own data sources and public sources. This means that you have some control over the data that Copilot can access. However, it's important to ensure that the data is accurate, relevant, and up-to-date. It's also important to make sure that the data is classified appropriately and that only authorized users have access to it. So to mitigate these concerns, it's important to identify which data Copilot is using and to control who has access to that data. This can be done by checking the permissions to the information such as Sites, files etc and to grant access to specific users or groups.
+![Image](/static/images/assets/getstartedwithcopilot/copilot-system.png)
 
-As Copilot makes extensive use of the Graph API to access data from Interal sources, including SharePoint, Teams, and OneDrive. This means that Copilot has access to the same information as the user who is logged in. This can be a powerful feature, but it also raises privacy concerns.
+As Copilot makes extensive use of the Graph API to access data from Internal sources, including SharePoint, Teams, and OneDrive. This means that Copilot has access to the same information as the user who is logged in. This can be a powerful feature, but it also raises privacy concerns.
 
 ![Image](/static/images/assets/getstartedwithcopilot/copilot-diagram-final.png)
 
@@ -45,7 +46,11 @@ Plugins allow Copilot to retrieve real-time data as needed to respond to your pr
 
 A issue i've seen in a lot of companies is that they are hesitate to delete or remove data, fearing that they might need it in the future. This approach is not only counterproductive but also poses potential security and compliance risks.
 
-A data cleanup strategy is essential for ensuring data integrity, minimizing storage costs, and enhancing data accessibility. It involves identifying, classifying, and managing data throughout its lifecycle, from creation to deletion. A well-defined data lifecycle management policy outlines the retention periods for different types of data, ensuring that only relevant information is retained while unnecessary data is purged.
+A data cleanup strategy is essential for ensuring data integrity, minimizing storage costs, and enhancing data accessibility. It involves identifying, classifying, and managing data throughout its lifecycle, from creation to deletion. A well-defined data lifecycle management policy outlines the retention periods for different types of data, ensuring that only relevant information is retained while unnecessary data is deleted.
+
+Because Copilot is truly data driven thanks to it being a LLM, and having bad data in will only come out as polish bad data (see Image below...):
+
+![Image](/static/images/assets/getstartedwithcopilot/F_Pl89MXMAAtM6C.jpg)
 
 Regular data cleanup exercises are essential for maintaining a healthy system and to keep cost down. One effective approach is to implement annual cleanup weeks, during which users are encouraged to review and delete old documents that are no longer relevant or required. This practice not only reduces storage clutter but also promotes data ownership and accountability among users.
 
@@ -56,3 +61,5 @@ But in essence data cleanup is not just about deleting old data; it's also about
 ## Permissions are important!
 
 ## Retention Policy and Sensitivity Labels!
+
+[Title](https://www.facebook.com/groups/Saab95ngconnection/)
