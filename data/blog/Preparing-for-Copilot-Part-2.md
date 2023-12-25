@@ -17,29 +17,41 @@ And this is what I'm going to deeper in this post!
 
 ## Identify your sources
 
-So, Copilot uses various sources to gather their data, some are your data sources and some are from public sources.
+So, Copilot gathers its data from a variety of sources, including your own data sources and public sources. This means that you have some control over the data that Copilot can access. However, it's important to ensure that the data is accurate, relevant, and up-to-date. It's also important to make sure that the data is classified appropriately and that only authorized users have access to it. So to mitigate these concerns, it's important to identify which data Copilot is using and to control who has access to that data. This can be done by checking the permissions to the information such as Sites, files etc and to grant access to specific users or groups.
 
-Data Sources:
+As Copilot makes extensive use of the Graph API to access data from Interal sources, including SharePoint, Teams, and OneDrive. This means that Copilot has access to the same information as the user who is logged in. This can be a powerful feature, but it also raises privacy concerns.
+
+![Image](/static/images/assets/getstartedwithcopilot/copilot-diagram-final.png)
+
+Here's some examples of the different data sources that copilot uses out of the box:
 
 - Microsoft Graph: This is a unified API that connects to data from various Microsoft 365 services, such as Outlook, Teams, SharePoint, OneDrive, and more. M365 copilot uses Microsoft Graph to access the user's calendar, email, contacts, files, chats, and other information that can help the user manage their tasks and projects.
 
-- Azure Cognitive Services: This is a collection of AI-powered services that enable M365 copilot to perform natural language processing, speech recognition, computer vision, and other cognitive tasks. M365 copilot uses Azure Cognitive Services to analyze the user's voice, text, images, and videos, and provide relevant feedback and suggestions.
+- Bing Search: M365 copilot uses Bing Search to find relevant information and resources for the user's queries ny querying web pages, images, videos, news, and other online content.
 
-- Bing Search: This is a web search engine that provides access to billions of web pages, images, videos, news, and other online content. M365 copilot uses Bing Search to find relevant information and resources for the user's queries and needs.
+- Azure Cognitive Services: This is a collection of AI-powered services that enable M365 copilot to perform natural language processing, speech recognition, computer vision, and other cognitive tasks. M365 copilot uses Azure Cognitive Services to analyze the user's voice, text, images, and videos, and provide relevant feedback and suggestions.
 
 - Leveraging Plugins: Plugins are a key enabler for connecting Copilot to external data. They provide live access to external services without the need for pre-indexing data. This means that Copilot can retrieve the latest information and respond to your prompts in real time:
 
-- OpenAI Plugins: Access external APIs and data using a simple YAML file interface.
+  - OpenAI Plugins: Access external APIs and data using a simple YAML file interface.
 
-- Microsoft Teams Message Extensions: Integrate Copilot with third-party applications and services within Teams.
+  - Microsoft Teams Message Extensions: Integrate Copilot with third-party applications and services within Teams.
 
-- Power Platform Connectors: Leverage Power Platform data and automation capabilities.
+  - Power Platform Connectors: Leverage Power Platform data and automation capabilities.
 
 Plugins allow Copilot to retrieve real-time data as needed to respond to your prompts, enhancing its ability to provide accurate and up-to-date information. They also enable Copilot to take direct actions through plugins, such as updating records or triggering workflows.
 
-![Image](https://learn.microsoft.com/en-us/copilot/media/copilot/copilot-diagram-final.png)
-
 ## Don't be afraid of deleting data
+
+A issue i've seen in a lot of companies is that they are hesitate to delete or remove data, fearing that they might need it in the future. This approach is not only counterproductive but also poses potential security and compliance risks.
+
+A data cleanup strategy is essential for ensuring data integrity, minimizing storage costs, and enhancing data accessibility. It involves identifying, classifying, and managing data throughout its lifecycle, from creation to deletion. A well-defined data lifecycle management policy outlines the retention periods for different types of data, ensuring that only relevant information is retained while unnecessary data is purged.
+
+Regular data cleanup exercises are essential for maintaining a healthy system and to keep cost down. One effective approach is to implement annual cleanup weeks, during which users are encouraged to review and delete old documents that are no longer relevant or required. This practice not only reduces storage clutter but also promotes data ownership and accountability among users.
+
+Another crucial aspect of data cleanup is identifying and archiving inactive sites or teams. Sites or teams that have been dormant for two years or more should be flagged for review. If the owner is still within the organization, they should be contacted to confirm their continued use of the site or team. In cases where the owner is no longer with the organization, the members should be notified. If no response is received, the site or team should be locked and archived for future reference. There's a couple of ways of doing this, I usually use Power Automate and build som logic around it but you will be able in the future use the access review feature in SharePoint Premium! This is what I would recommend to use in the future!
+
+But in essence data cleanup is not just about deleting old data; it's also about organizing and structuring existing information. By implementing clear data naming conventions, consistent file formats, and metadata tagging, the organizations can make their data more searchable and accessible both for the user but also for Copilot, which enhances productivity and collaboration.
 
 ## Permissions are important!
 
