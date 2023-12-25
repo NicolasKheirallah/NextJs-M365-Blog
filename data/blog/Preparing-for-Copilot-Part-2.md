@@ -18,6 +18,7 @@ And this is what I'm going to deeper in this post!
 ## Identify your sources
 
 So, Copilot gathers its data from a variety of sources, including your own data sources and public sources. This means that you have some control over the data that Copilot can access. However, it's important to ensure that the data is accurate, relevant, and up-to-date. It's also important to make sure that the data is classified appropriately and that only authorized users have access to it. So to mitigate these concerns, it's important to identify which data Copilot is using and to control who has access to that data. This can be done by checking the permissions to the information such as Sites, files etc and to grant access to specific users or groups.
+
 ![Image](/static/images/assets/getstartedwithcopilot/copilot-system.png)
 
 As Copilot makes extensive use of the Graph API to access data from Internal sources, including SharePoint, Teams, and OneDrive. This means that Copilot has access to the same information as the user who is logged in. This can be a powerful feature, but it also raises privacy concerns.
