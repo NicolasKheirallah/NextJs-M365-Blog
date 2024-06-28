@@ -7,7 +7,7 @@ summary: What's the use-case for both of them
 authors: ['default']
 ---
 
-## Intrduction
+# Introduction
 
 Let's face it, managing all that information in Microsoft 365 can feel like wrestling a sand worm from Dune! Emails pile up, documents multiply, and suddenly you're knee-deep in chaos and you need to buy more storage. But luckely Microsoft has started offers some fantastic tools to help you manage this data sprawl, and two of the most important ones are Backup and Archiving.
 
