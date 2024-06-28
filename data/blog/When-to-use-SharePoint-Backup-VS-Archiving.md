@@ -13,7 +13,9 @@ Let's face it, managing all that information in Microsoft 365 can feel like wres
 
 They're actually quite straightforward, and understanding the difference between them is key to keeping your data safe and organized. This guide will help you breaking down backup vs. archiving in a way that's easy to understand. By the end, you'll be able to confidently choosing the right tool for the job and keeping your Microsoft 365 information secure.
 
-**Microsoft 365 Backup: Your Disaster Recovery Shield**
+## Microsoft 365 Backup
+
+**Your Disaster Recovery Shield**
 
 Imagine a knight in shining armor for your data. That's Microsoft 365 Backup. It creates regular copies to protect your information in case of disasters like:
 
@@ -35,7 +37,9 @@ Imagine a knight in shining armor for your data. That's Microsoft 365 Backup. It
 - **Fixing Corrupted Data:** Recover uncorrupted versions of corrupted files or emails.
 - **Disaster Recovery Compliance:** Backups are vital for businesses with disaster recovery plans.
 
-**Microsoft 365 Archiving: Long-Term Storage for Compliance**
+## Microsoft 365 Archiving
+
+**Long-Term Storage for Compliance**
 
 Think of archiving as a secure vault for your inactive Microsoft 365 data. It's ideal for:
 
@@ -65,8 +69,6 @@ Think of archiving as a secure vault for your inactive Microsoft 365 data. It's 
 | **Retention Period** | Short to medium-term | Long-term, often dictated by regulations |
 | **Accessibility** | Frequently accessed for restoration | Less frequently accessed for legal/historical needs |
 | **Data Management** | Creates copies of data | Moves data to dedicated archival storage |
-
-drive_spreadsheetExport to Sheets
 
 **The Power of Combining Both**
 
