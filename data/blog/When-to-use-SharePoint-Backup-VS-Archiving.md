@@ -64,11 +64,12 @@ Think of archiving as a secure vault for your inactive Microsoft 365 data. It's 
 
 **Backup vs. Archiving: Key Differences**
 
-| Feature | Backup | Archiving |
-| **Purpose** | Data recovery and business continuity | Long-term data retention and compliance |
-| **Retention Period** | Short to medium-term | Long-term, often dictated by regulations |
-| **Accessibility** | Frequently accessed for restoration | Less frequently accessed for legal/historical needs |
-| **Data Management** | Creates copies of data | Moves data to dedicated archival storage |
+| Feature              | Backup                                | Archiving                                           |
+| -------------------- | ------------------------------------- | --------------------------------------------------- |
+| **Purpose**          | Data recovery and business continuity | Long-term data retention and compliance             |
+| **Retention Period** | Short to medium-term                  | Long-term, often dictated by regulations            |
+| **Accessibility**    | Frequently accessed for restoration   | Less frequently accessed for legal/historical needs |
+| **Data Management**  | Creates copies of data                | Moves data to dedicated archival storage            |
 
 **The Power of Combining Both**
 
