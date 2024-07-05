@@ -63,14 +63,9 @@ $siteCollections = Get-SPOSite
 # Iterate through all your site collection
 foreach ($site in $siteCollections) {
     # Get the root web of the site collection
-    $siteWeb = Get-SPOWeb -Identity $site.Url
+    Set-SPOSite -Identity $site.Url -EnableAutoExpirationVersionTrim $false -MajorVersionLimit 100          
+    Write-Host "Version history for site has been set:" $site.Url
 
-    # Set the versionhistory limit for all lists and libraries
-    $siteWeb.Lists | ForEach-Object {
-        $_.EnableVersioning = $true #Enabled Version History
-        $_.MajorVersionLimit = 100  # 100 is the default limit in SharePoint, Replace 100 with your desired version limit if you want bigger or smaller
-        $_.Update()
-        Write-Host "Version history for site has been set:" $site.Url
     }
 
     ```
