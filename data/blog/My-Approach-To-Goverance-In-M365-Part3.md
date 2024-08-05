@@ -29,23 +29,7 @@ Data governance focuses on managing the lifecycle of data, from creation to dele
 - **Data Loss Prevention (DLP):** Policies that prevent unauthorized sharing of sensitive information.
 - **Retention Policies:** Ensure that data is retained for the required period to meet regulatory requirements and then securely deleted.
 
-#### 3. Compliance Management
-
-Compliance management ensures that the organization adheres to legal, regulatory, and industry standards. Key features include:
-
-- **Compliance Manager:** Provides a comprehensive dashboard to manage compliance across Microsoft 365, including assessments, recommendations, and audit trails.
-- **eDiscovery:** Advanced search capabilities to find and manage data for legal and compliance purposes.
-- **Audit Logs:** Track user and admin activities for security and compliance monitoring.
-
-#### 4. Security Management
-
-Security management protects the organization’s data and resources from threats. Key features include:
-
-- **Microsoft Defender for Office 365:** Protects against phishing, malware, and other threats.
-- **Advanced Threat Protection (ATP):** Real-time threat detection and response capabilities.
-- **Security Center:** Centralized dashboard for managing security policies, alerts, and incidents.
-
-#### 5. Lifecycle Management
+#### 3. Lifecycle Management
 
 Lifecycle management
 
@@ -53,7 +37,64 @@ involves managing the creation, use, and disposal of digital resources. Key feat
 
 - **Teams Governance:** Policies for creating, managing, and archiving Microsoft Teams.
 - **Group Management:** Controls for the creation and management of Office 365 groups.
+- **Ownership:** Controls for the creation and management of Office 365 groups.
 - **Provisioning and De-provisioning:** Automate the process of onboarding and offboarding users to ensure timely access to resources.
+
+### Script for Checking Ownership
+
+Permisisons needed:
+
+- Group.ReadWrite.All,
+- Directory.Read.All
+- Group.Read.All
+
+```powershell
+
+Install-Module Microsoft.Graph -Scope CurrentUser
+
+# Define the necessary variables
+$clientId = "your-client-id"
+$tenantId = "your-tenant-id"
+$clientSecret = "your-client-secret"
+$tokenEndpoint = "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token"
+$graphEndpoint = "https://graph.microsoft.com/v1.0"
+
+# Get the OAuth token
+$body = @{
+    client_id     = $clientId
+    scope         = "https://graph.microsoft.com/.default"
+    client_secret = $clientSecret
+    grant_type    = "client_credentials"
+}
+
+$response = Invoke-RestMethod -Method Post -Uri $tokenEndpoint -ContentType "application/x-www-form-urlencoded" -Body $body
+$accessToken = $response.access_token
+
+# Get all groups
+$groups = Invoke-RestMethod -Method Get -Uri "$graphEndpoint/groups" -Headers @{ Authorization = "Bearer $accessToken" }
+
+# Initialize an array to hold groups with less than two owners
+$groupsWithLessThanTwoOwners = @()
+
+foreach ($group in $groups.value) {
+    $owners = Invoke-RestMethod -Method Get -Uri "$graphEndpoint/groups/$($group.id)/owners" -Headers @{ Authorization = "Bearer $accessToken" }
+
+    if ($owners.value.Count -lt 2) {
+        $groupsWithLessThanTwoOwners += $group
+    }
+}
+
+# Output the groups with less than two owners
+$groupsWithLessThanTwoOwners | ForEach-Object {
+    [PSCustomObject]@{
+        GroupId   = $_.id
+        GroupName = $_.displayName
+        Owners    = (Invoke-RestMethod -Method Get -Uri "$graphEndpoint/groups/$($_.id)/owners" -Headers @{ Authorization = "Bearer $accessToken" }).value
+    }
+} | Format-Table -Property GroupId, GroupName, Owners
+
+
+```
 
 ### Conclusion
 
