@@ -1,5 +1,5 @@
 ---
-date: '2024-07-25T20:10:01.975Z'
+date: '2024-07-25T20:10:01'
 title: My Approach to Governance in Microsoft 365 - Part 1
 description: What to do when facing the issue!
 tags: ['Viva Connections', 'SharePoint']

@@ -1,5 +1,5 @@
 ---
-date: '2024-08-0520:10:01.975Z'
+date: '2024-08-0520:10:31'
 title: Technical Implementation of Microsoft 365 Governance - Part 3
 description: A deep dive into the technical implementation of governance in Microsoft 365, focusing on identity and access management, data governance, compliance management, security management, and lifecycle management.
 tags: ['Microsoft 365', 'SharePoint']
