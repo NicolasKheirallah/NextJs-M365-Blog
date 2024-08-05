@@ -44,13 +44,11 @@ involves managing the creation, use, and disposal of digital resources. Key feat
 
 Permisisons needed:
 
-- Group.ReadWrite.All,
+- Group.Read.All,
 - Directory.Read.All
-- Group.Read.All
+- GroupMember.Read.All
 
 ```powershell
-
-Install-Module Microsoft.Graph -Scope CurrentUser
 
 # Define the necessary variables
 $clientId = "your-client-id"
