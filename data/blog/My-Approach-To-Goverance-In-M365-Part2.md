@@ -1,5 +1,5 @@
 ---
-date: '2024-07-28T20:12:11'
+date: '2024-07-28T20:12:11.726Z'
 title: Advanced Governance Strategies in Microsoft 365 - Part 2
 description: Delving into advanced governance strategies such as automation, audits, and key technical components in Microsoft 365.
 tags: ['Viva Connections', 'SharePoint']

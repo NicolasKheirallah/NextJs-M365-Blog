@@ -1,27 +1,11 @@
 ---
-date: '2024-07-25T20:10:01'
+date: '2024-07-25T20:10:01.726Z'
 title: My Approach to Governance in Microsoft 365 - Part 1
-description: What to do when facing the issue!
+description: Understanding the basics of governance in Microsoft 365, its importance, and best practices for defining and implementing it.!
 tags: ['Viva Connections', 'SharePoint']
-summary: What to do when facing the issue!
+summary: Understanding the basics of governance in Microsoft 365, its importance, and best practices for defining and implementing it.!
 authors: ['default']
 ---
-
-Certainly! Here’s how the series can be structured:
-
----
-
-## Blog Post 1: Introduction to Governance in Microsoft 365
-
-### Title: My Approach to Governance in Microsoft 365 - Part 1
-
-### Description: Understanding the basics of governance in Microsoft 365, its importance, and best practices for defining and implementing it.
-
-### Date: '2024-07-25T20:10:01.975Z'
-
-### Tags: ['Viva Connections', 'SharePoint']
-
-### Authors: ['default']
 
 ### Introduction
 
