@@ -41,6 +41,8 @@ Intelligent Versioning introduces a feature called **automatic version thinning*
 
 By using this automatic thinning approach, Microsoft reports that you can reduce version storage usage by up to **96%** in some cases, without compromising users’ ability to access important historical versions.
 
+My personal experience, I've seen storage saved 30-60% from various clients! 
+
 ---
 
 ## **Benefits of Intelligent Versioning**
