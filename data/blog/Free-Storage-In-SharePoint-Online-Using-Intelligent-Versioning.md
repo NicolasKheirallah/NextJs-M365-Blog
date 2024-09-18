@@ -116,12 +116,9 @@ $siteCollections = Get-SPOSite -Limit All
 foreach ($site in $siteCollections) {
     Write-Host "Processing site: $($site.Url)"
 
-    # Create a date variable for 365 days ago
-    $olderThanDate = (Get-Date).AddDays(-365)
-
     # Create a batch delete job for versions older than 365 days
     try {
-        New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -DeleteBeforeDays $olderThanDate
+New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -DeleteBeforeDays 365 -confirm:$false 
         Write-Host "Batch delete job created for site: $($site.Url)"
     }
     catch {
@@ -155,7 +152,7 @@ foreach ($site in $siteCollections) {
 
     try {
         # Create a batch delete job for versions older than 365 days
-        New-PnPSiteFileVersionBatchDeleteJob -SiteUrl $site.Url -LastRetainedVersionDate $olderThanDate
+        New-PnPSiteFileVersionBatchDeleteJob -SiteUrl $site.Url -LastRetainedVersionDate 365 -confirm:$false 
 
         Write-Host "Batch delete job created for site: $($site.Url)"
     }
