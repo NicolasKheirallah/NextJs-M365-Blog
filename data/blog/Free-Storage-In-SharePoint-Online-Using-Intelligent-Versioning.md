@@ -1,10 +1,10 @@
 ---
-**date**: '2024-09-18T13:14:22.412Z'  
-**title**: How to Free Up Storage in SharePoint Online Using Intelligent Versioning and PowerShell  
-**description**: A guide on freeing up storage in SharePoint Online using Intelligent Versioning and automated PowerShell cleanup.  
-**tags**: ['SharePoint', 'SharePoint Premium']  
-**summary**: A guide on how to use Intelligent Versioning in SharePoint Online and automate the cleanup of old document versions using PowerShell.  
-**authors**: ['default']
+date: '2024-09-18T13:14:22.412Z'  
+title: How to Free Up Storage in SharePoint Online Using Intelligent Versioning and PowerShell  
+description A guide on freeing up storage in SharePoint Online using Intelligent Versioning and automated PowerShell cleanup.  
+tags: ['SharePoint', 'SharePoint Premium']  
+summary: A guide on how to use Intelligent Versioning in SharePoint Online and automate the cleanup of old document versions using PowerShell.  
+authors: ['default']
 ---
 
 # Introduction
