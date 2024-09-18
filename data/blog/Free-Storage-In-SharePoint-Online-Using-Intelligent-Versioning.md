@@ -11,9 +11,9 @@ authors: ['default']
 
 ## Freeing Storage in SharePoint Online Using Intelligent Versioning and PowerShell Automation
 
-As organizations increasingly adopt SharePoint Online for collaboration and document management, managing storage efficiently becomes a critical challenge. One significant contributor to storage consumption is SharePoint's **versioning feature**, which creates multiple versions of documents, leading to storage bloat over time.
+This is becoming more and more of an issue and is something I've gotten question about alot! As organizations increasingly adopt SharePoint Online for collaboration and document management, managing storage efficiently becomes a critical challenge. One significant contributor to storage consumption is SharePoint's **versioning feature**, which creates multiple versions of documents, leading to storage bloat over time.
 
-In this post, we’ll discuss how to **intelligently manage file versioning** in SharePoint Online and automate the cleanup of old versions using **PowerShell**. By the end, you’ll have a clear strategy for maintaining healthy storage and managing SharePoint's powerful versioning features effectively.
+So In this post, we’ll discuss how to **intelligently manage file versioning** in SharePoint Online and automate the cleanup of old versions using **PowerShell**. By the end, you’ll have a clear strategy for maintaining healthy storage and managing SharePoint's powerful versioning features effectively.
 
 ---
 
@@ -146,10 +146,6 @@ $siteCollections = Get-PnPTenantSite -IncludeOneDriveSites -Limit All
 # Loop through each site collection
 foreach ($site in $siteCollections) {
     Write-Host "Processing site: $($site.Url)"
-  
-    # Set the threshold for versions older than 365 days
-    $olderThanDate = (Get-Date).AddDays(-365)
-
     try {
         # Create a batch delete job for versions older than 365 days
         New-PnPSiteFileVersionBatchDeleteJob -SiteUrl $site.Url -LastRetainedVersionDate 365 -confirm:$false 
@@ -180,9 +176,9 @@ Disconnect-PnPOnline
 
 ## **Best Practices for Intelligent Versioning and Cleanup**
 
-1. **Define a Versioning Policy**: Decide how many versions you want to retain for different types of documents. This can be configured in library settings or using PowerShell (e.g., `-MajorVersionLimit X`).
+1. **Define a Versioning Policy**: Decide how many versions you want to retain for different types of documents. This can be configured in library settings or using PowerShell (e.g., `-MajorVersionLimit X`). My Recommendation is to set it to automatic!
 2. **Automate Version Cleanup**: Use automation to regularly clean up old versions, minimizing the need for manual intervention.
-3. **Monitor Storage Usage**: Regularly review storage reports from the SharePoint Admin Center to identify areas where storage is being consumed excessively.
+3. **Monitor Storage Usage**: Regularly review storage reports from the SharePoint Admin Center to identify areas where storage is being consumed excessively. Make sure that the owners clean up old files and make use of Archive and backup function for data that isn't used daily!
 4. **Combine with Retention Policies**: Protect critical files by applying **Retention Labels** or **Retention Policies** to ensure they are not deleted prematurely, especially for legal or compliance reasons.
 
 ---
