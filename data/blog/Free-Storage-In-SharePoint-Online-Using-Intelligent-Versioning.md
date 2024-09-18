@@ -67,7 +67,7 @@ Set-SPOTenant -EnableVersionExpirationSetting $true
 ```
 
 PnP Powershell:
-```
+```powershell
 # Install and Import PnP PowerShell module if not installed
 # Install-Module -Name "PnP.PowerShell"
 
@@ -82,6 +82,8 @@ Set-PnPTenant -EnableVersionExpirationSetting $true
 
 
 Once enabled, this will apply Intelligent Versioning to all **new** files in SharePoint document libraries. You can verify this setting in the **Admin Center** under **Versioning Settings**.
+
+   ![Image](/static/images/assets/EnableAndCleanStorage/1.png)
 
 ---
 
@@ -133,7 +135,7 @@ Disconnect-SPOService
 ```
 
 PnP Powershell:
-```
+```powershell
 # Install the PnP PowerShell module if not already installed
 # Install-Module -Name "PnP.PowerShell"
 
