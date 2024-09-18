@@ -66,6 +66,21 @@ Connect-SPOService -Url $adminSiteUrl
 Set-SPOTenant -EnableVersionExpirationSetting $true
 ```
 
+PnP Powershell:
+```
+# Install and Import PnP PowerShell module if not installed
+# Install-Module -Name "PnP.PowerShell"
+
+# Connect to SharePoint Online Admin Center
+$adminSiteUrl = "https://<tenant>-admin.sharepoint.com"
+Connect-PnPOnline -Url $adminSiteUrl -Interactive
+
+# Enable Intelligent Versioning
+Set-PnPTenant -EnableVersionExpirationSetting $true
+
+```
+
+
 Once enabled, this will apply Intelligent Versioning to all **new** files in SharePoint document libraries. You can verify this setting in the **Admin Center** under **Versioning Settings**.
 
 ---
@@ -115,6 +130,41 @@ foreach ($site in $siteCollections) {
 
 # Disconnect from SharePoint Online
 Disconnect-SPOService
+```
+
+PnP Powershell:
+```
+# Install the PnP PowerShell module if not already installed
+# Install-Module -Name "PnP.PowerShell"
+
+# Connect to SharePoint Online
+$adminSiteUrl = "https://<tenant>-admin.sharepoint.com"
+Connect-PnPOnline -Url $adminSiteUrl -Interactive
+
+# Get all site collections
+$siteCollections = Get-PnPTenantSite -IncludeOneDriveSites -Limit All
+
+# Loop through each site collection
+foreach ($site in $siteCollections) {
+    Write-Host "Processing site: $($site.Url)"
+  
+    # Set the threshold for versions older than 365 days
+    $olderThanDate = (Get-Date).AddDays(-365)
+
+    try {
+        # Create a batch delete job for versions older than 365 days
+        New-PnPSiteFileVersionBatchDeleteJob -SiteUrl $site.Url -LastRetainedVersionDate $olderThanDate
+
+        Write-Host "Batch delete job created for site: $($site.Url)"
+    }
+    catch {
+        Write-Host "Error creating batch delete job for site: $($site.Url)"
+        Write-Host $_.Exception.Message
+    }
+}
+
+# Disconnect from SharePoint Online
+Disconnect-PnPOnline
 ```
 
 ---
