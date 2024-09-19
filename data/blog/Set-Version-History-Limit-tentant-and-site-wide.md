@@ -70,3 +70,12 @@ foreach ($site in $siteCollections) {
 
     ```
 ````
+
+
+
+**Update**
+
+I've written a post about optimizing SharePoint Online storage using intelligent versioning and PowerShell. This might be particularly helpful for you, as versioning can often lead to storage challenges
+
+https://yourmodernworkplace.com/blog/Free-Storage-In-SharePoint-Online-Using-Intelligent-Versioning
+
