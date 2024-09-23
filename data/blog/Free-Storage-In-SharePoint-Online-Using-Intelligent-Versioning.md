@@ -133,33 +133,91 @@ Disconnect-SPOService
 
 PnP Powershell:
 ```powershell
-# Install the PnP PowerShell module if not already installed
-# Install-Module -Name "PnP.PowerShell"
+# Check if SharePoint Online Management Shell is installed
+$module = Get-Module -ListAvailable -Name "Microsoft.Online.SharePoint.PowerShell"
 
-# Connect to SharePoint Online
-$adminSiteUrl = "https://<tenant>-admin.sharepoint.com"
-Connect-PnPOnline -Url $adminSiteUrl -Interactive
+if (-not $module) {
+    Write-Host "Downloading and installing the SharePoint Online Management Shell module..."
+    Install-Module -Name "Microsoft.Online.SharePoint.PowerShell" -Force -AllowClobber
+}
 
-# Get all site collections
-$siteCollections = Get-PnPTenantSite -IncludeOneDriveSites -Limit All
+# Import the SharePoint Online Management Shell module
+Import-Module "Microsoft.Online.SharePoint.PowerShell" -UseWindowsPowerShell
 
-# Loop through each site collection
-foreach ($site in $siteCollections) {
-    Write-Host "Processing site: $($site.Url)"
-    try {
-        # Create a batch delete job for versions older than 365 days
-        New-PnPSiteFileVersionBatchDeleteJob -SiteUrl $site.Url -LastRetainedVersionDate 365 -confirm:$false 
+# Function to make input case-insensitive
+function Get-InsensitiveInput($prompt) {
+    return (Read-Host $prompt).ToLower()
+}
 
-        Write-Host "Batch delete job created for site: $($site.Url)"
+# Prompt for Intelligent Versioning enablement
+$intelligentVersionEnable = Get-InsensitiveInput "Do you want to enable Intelligent Versioning? (y/n)"
+
+if ($intelligentVersionEnable -eq "y") {
+    $tenantName = Read-Host "Enter your SharePoint tenant name (e.g., 'mytenant' for 'https://mytenant-admin.sharepoint.com')"
+    $adminSiteUrl = "https://$tenantName-admin.sharepoint.com"
+    Connect-SPOService -Url $adminSiteUrl
+
+    # Enable Intelligent Versioning
+    Set-SPOTenant -EnableVersionExpirationSetting $true
+
+    # Prompt for deletion mode
+    $deletionMode = Get-InsensitiveInput "Do you want to run the Delete mode? (yes/no)"
+
+    if ($deletionMode -eq "yes") {
+    # Check for valid input for deletion type
+    if ($deletionModeType -ne "days" -and $deletionModeType -ne "versions") {
+        Write-Host "Invalid option. Please run the script again and choose either 'days' or 'versions'."
+        exit
     }
-    catch {
-        Write-Host "Error creating batch delete job for site: $($site.Url)"
-        Write-Host $_.Exception.Message
+        # Prompt for deletion type: days or versions
+        $deletionModeType = Get-InsensitiveInput "Do you want to delete by 'days' or 'versions'? Enter your choice."
+
+        # Prompt for additional input based on the deletion mode
+        if ($deletionModeType -eq "days") {
+            $deleteBeforeDays = Read-Host "Enter the number of days to keep file versions (e.g., 365 for one year)"
+        }
+        elseif ($deletionModeType -eq "versions") {
+            $versionsToKeep = Read-Host "Enter the number of versions to keep (e.g., 5 for the last 5 versions)"
+        }
     }
+
+    # Get all site collections
+    $siteCollections = Get-SPOSite -Limit All
+
+    # Loop through each site collection
+    foreach ($site in $siteCollections) {
+        Write-Host "Processing site: $($site.Url)"
+
+        try {
+            # Enable AutoExpirationVersionTrim for each site
+            Set-SPOSite -Identity $site.Url -EnableAutoExpirationVersionTrim $true -Confirm:$false
+            New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -automatic -Confirm:$false
+
+            # Perform batch delete operation based on the deletion mode
+            if ($deletionModeType -eq "days") {
+                New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -DeleteBeforeDays $deleteBeforeDays -Confirm:$false
+                Write-Host "Batch delete job created for site: $($site.Url) for file versions older than $deleteBeforeDays days."
+            }
+            elseif ($deletionModeType -eq "versions") {
+                New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -MajorVersionLimit $versionsToKeep -Confirm:$false
+                Write-Host "Batch delete job created for site: $($site.Url), keeping only the last $versionsToKeep versions."
+            }
+        }
+        catch {
+            Write-Host "Error creating batch delete job for site: $($site.Url)"
+            Write-Host $_.Exception.Message
+        }
+    }
+    
+}
+elseif ($intelligentVersionEnable -eq "n") {
+    Write-Host "Intelligent Versioning not enabled. Exiting script."
+    exit
 }
 
 # Disconnect from SharePoint Online
-Disconnect-PnPOnline
+Disconnect-SPOService
+
 ```
 
 ---
