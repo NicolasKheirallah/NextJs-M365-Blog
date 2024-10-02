@@ -131,9 +131,9 @@ New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -DeleteBeforeDays 365 -
 Disconnect-SPOService
 ```
 
-PnP Powershell:
+More advanced version with options:
 ```powershell
-# Check if SharePoint Online Management Shell is installed
+# Check if SharePoint Online Management Shell is installed 
 $module = Get-Module -ListAvailable -Name "Microsoft.Online.SharePoint.PowerShell"
 
 if (-not $module) {
@@ -158,19 +158,20 @@ if ($intelligentVersionEnable -eq "y") {
     Connect-SPOService -Url $adminSiteUrl
 
     # Enable Intelligent Versioning
-    Set-SPOTenant -EnableVersionExpirationSetting $true
+    Set-SPOTenant -EnableVersionExpiration $true
 
     # Prompt for deletion mode
     $deletionMode = Get-InsensitiveInput "Do you want to run the Delete mode? (yes/no)"
 
     if ($deletionMode -eq "yes") {
-    # Check for valid input for deletion type
-    if ($deletionModeType -ne "days" -and $deletionModeType -ne "versions") {
-        Write-Host "Invalid option. Please run the script again and choose either 'days' or 'versions'."
-        exit
-    }
         # Prompt for deletion type: days or versions
         $deletionModeType = Get-InsensitiveInput "Do you want to delete by 'days' or 'versions'? Enter your choice."
+
+        # Check for valid input for deletion type
+        if ($deletionModeType -ne "days" -and $deletionModeType -ne "versions") {
+            Write-Host "Invalid option. Please run the script again and choose either 'days' or 'versions'."
+            exit
+        }
 
         # Prompt for additional input based on the deletion mode
         if ($deletionModeType -eq "days") {
@@ -191,32 +192,41 @@ if ($intelligentVersionEnable -eq "y") {
         try {
             # Enable AutoExpirationVersionTrim for each site
             Set-SPOSite -Identity $site.Url -EnableAutoExpirationVersionTrim $true -Confirm:$false
-            New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -automatic -Confirm:$false
 
-            # Perform batch delete operation based on the deletion mode
-            if ($deletionModeType -eq "days") {
-                New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -DeleteBeforeDays $deleteBeforeDays -Confirm:$false
-                Write-Host "Batch delete job created for site: $($site.Url) for file versions older than $deleteBeforeDays days."
+            # Perform batch delete operation if deletion mode is 'yes'
+            if ($deletionMode -eq "yes") {
+                # Create batch delete job based on the deletion mode type
+                if ($deletionModeType -eq "days") {
+                    New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -DeleteBeforeDays $deleteBeforeDays -Confirm:$false
+                    Write-Host "Batch delete job created for site: $($site.Url) for file versions older than $deleteBeforeDays days."
+                }
+                elseif ($deletionModeType -eq "versions") {
+                    New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -MajorVersionLimit $versionsToKeep -Confirm:$false
+                    Write-Host "Batch delete job created for site: $($site.Url), keeping only the last $versionsToKeep versions."
+                }
             }
-            elseif ($deletionModeType -eq "versions") {
-                New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -MajorVersionLimit $versionsToKeep -Confirm:$false
-                Write-Host "Batch delete job created for site: $($site.Url), keeping only the last $versionsToKeep versions."
+            else {
+                Write-Host "Deletion mode not enabled for site: $($site.Url)."
             }
         }
         catch {
-            Write-Host "Error creating batch delete job for site: $($site.Url)"
+            Write-Host "Error processing site: $($site.Url)"
             Write-Host $_.Exception.Message
         }
     }
-    
+
+    # Disconnect from SharePoint Online
+    Disconnect-SPOService
 }
 elseif ($intelligentVersionEnable -eq "n") {
     Write-Host "Intelligent Versioning not enabled. Exiting script."
     exit
 }
+else {
+    Write-Host "Invalid input. Please run the script again and enter 'y' or 'n'."
+    exit
+}
 
-# Disconnect from SharePoint Online
-Disconnect-SPOService
 
 ```
 
