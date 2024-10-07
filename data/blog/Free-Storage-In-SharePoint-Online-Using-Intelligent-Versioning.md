@@ -115,7 +115,8 @@ $siteCollections = Get-SPOSite -Limit All
 # Loop through each site collection
 foreach ($site in $siteCollections) {
     Write-Host "Processing site: $($site.Url)"
-
+    #Sets Intelligent Versioning on all sites 
+    Set-SPOSite -Identity $site.Url -EnableAutoExpirationVersionTrim $true 
     # Create a batch delete job for versions older than 365 days
     try {
 New-SPOSiteFileVersionBatchDeleteJob -Identity $site.Url -DeleteBeforeDays 365 -confirm:$false 
