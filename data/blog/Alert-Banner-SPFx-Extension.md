@@ -1,4 +1,3 @@
-````markdown
 ---
 date: '2024-10-11T01:49:22.412Z'
 title: Alert Banner for SharePoint online
@@ -68,6 +67,7 @@ Before deploying the Alert Banner SPFx Extension, ensure you have the following:
    ```bash
    git clone https://github.com/NicolasKheirallah/AlertBanner.git
    ```
+
 ````
 
 2. **Navigate to the Solution Folder**
@@ -198,3 +198,4 @@ For more information, updates, and to contribute to the project, visit the [Aler
 ```
 
 ```
+````
