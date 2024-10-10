@@ -95,8 +95,7 @@ Before deploying the Alert Banner SPFx Extension, ensure you have the following:
    - Upload it to your SharePoint tenant's App Catalog.
    - Approve any necessary permissions.
    - Deploy the extension to your desired site collections.
-
-> **Note:** Additional configuration may be required based on your specific environment and requirements.
+````
 
 ## Managing Alerts
 
@@ -198,4 +197,7 @@ For more information, updates, and to contribute to the project, visit the [Aler
 ```
 
 ```
-````
+
+```
+
+```
