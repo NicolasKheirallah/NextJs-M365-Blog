@@ -7,7 +7,7 @@ summary: Learn how to automate content type assignments in SharePoint using Site
 authors: ['default']
 ---
 
-So content types are important for maintaining structured content and ensuring consistent metadata across your libraries and lists. But in Site script it isn't possible to set a default content type. So by combining **Site Scripts** together woth **Power Automate**, we solve this by assigning content types to lists or libraries triggered by the site script!
+So content types are important for maintaining structured content and ensuring consistent metadata across your libraries and lists. But in Site script it isn't possible to set a default content type. So by combining **Site Scripts** together with **Power Automate**, we solve this by assigning content types to lists or libraries triggered by the site script!
 
 This guide will walk you through how to use a Site Script to define content types and a Power Automate flow to assign those content types dynamically based on triggers.
 
