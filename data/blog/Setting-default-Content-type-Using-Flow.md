@@ -1,5 +1,5 @@
 ---
-date: '2024-07-28T20:12:11.726Z'
+date: '2024-11-28T20:12:11.726Z'
 title: Setting Default Content Type  in SharePoint Using Site Scripts and Power Automate
 description: Learn how to use Site Scripts and Power Automate to dynamically assign content types to SharePoint lists or libraries with ease.
 tags: ['SharePoint', 'Power Automate', 'Site Scripts', 'Automation']
