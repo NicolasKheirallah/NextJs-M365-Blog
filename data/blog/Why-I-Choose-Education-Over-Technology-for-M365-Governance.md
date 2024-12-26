@@ -18,7 +18,7 @@ My wake-up call came from observing a recurring pattern across multiple clients.
 - **Restricted M365 Group Creation:** Organizations implemented strict controls over who could create M365 groups, hoping to manage the chaos in Teams, SharePoint, and Viva Engage.
 - **Superficial Solutions:** These restrictions didn't address the root problems. Instead of solving the main issues, they merely imposed limitations on users.
 - **User Restrictions:** By heavily restricting users, companies inadvertently hindered productivity and collaboration.
-- **Expensive Third-Party Tools:** Most solutions relied on costly third-party SaaS or consulting companies, with price tags ranging from $100,000 to $250,000.
+- **Expensive Third-Party Tools:** Most solutions relied on costly third-party SaaS or consulting companies, with price tags ranging from SEK 100,000 to SEK 500,000 and more
 - **Developer Attrition:** These expensive and restrictive approaches often led to the loss of in-house developers, as resources were diverted to maintain these solutions.
 - **Lack of Standardization:** There was no standardized approach, resulting in inconsistent governance practices and increased complexity.
 
@@ -26,7 +26,7 @@ I realized that throwing technology at these educational issues was not the answ
 
 ## A Different Approach
 
-Instead of recommending another expensive tool, I proposed something radical: invest in education. Not just basic training, but comprehensive, practical education about why governance matters and how to implement it effectively within the M365 ecosystem.
+Instead of recommending another expensive tool, I proposed something radical: invest in education for the users. Not just basic training, but comprehensive, practical education about why governance matters and how to implement it effectively within the M365 ecosystem. So they understand what they are doing
 
 The CFO was skeptical. "You want us to spend money on training instead of a governance solution?"
 
@@ -42,7 +42,7 @@ During our discovery sessions, we uncovered that the team naturally organized th
 
 The transformation was remarkable. Once people understood the 'why' behind governance, the 'how' became almost intuitive. We implemented a straightforward system:
 
-1. **Interactive Course:** Before anyone could create a new Team or M365 group, they had to complete a short, engaging course. This wasn’t dull compliance training but interactive modules based on real scenarios from my consulting experience.
+1. **Interactive Course:** Before anyone gets the ability to create a new Team or M365 group, they had to complete a short, engaging course. This wasn’t dull compliance training but interactive modules based on real scenarios from my consulting experience.
 
    - _“Here’s what happened when a team didn’t have two owners...”_
    - _“This is why we classify sensitive information...”_
@@ -55,9 +55,9 @@ The transformation was remarkable. Once people understood the 'why' behind gover
    - **Viva Engage:** For company-wide communications, community building, and informal discussions.
    - **SharePoint:** For document management, intranet sites, and long-term content storage.
 
-2. **Assessment:** After the course, users answered key questions to ensure they grasped the governance principles and the appropriate use cases for each platform. Only then could they proceed to create new Teams or groups.
+2. **Assessment:** After the course, users answered key questions to ensure they grasped the governance principles and the appropriate use cases for each platform. Only then could they proceed to be able to new Teams or groups.
 
-3. **Templates for Success:** We provided a variety of templates tailored to different departmental needs. These templates offered predefined structures for various use cases, making it easier for users to set up their Teams, Viva Engage spaces, and SharePoint sites correctly from the start.
+3. **Templates for Success:** We provided a variety of templates tailored to different departmental needs. These templates offered predefined structures for various use cases, making it easier for users to set up their Teams and SharePoint sites correctly from the start.
 
 4. **Classification Guidelines:** We introduced a clear classification system for Teams, Viva Engage, and SharePoint uses. This helped users understand the appropriate use cases for each type of resource, ensuring consistency and compliance across the organization.
 
@@ -99,7 +99,3 @@ But the most meaningful outcome? Hearing a finance director tell a new employee,
 Implementing this approach across various organizations has taught me an invaluable lesson: good governance isn’t about control—it’s about empowerment through understanding.
 
 Yes, we still use automation and have policies and procedures in place. But they support the human element rather than trying to replace it. You can’t throw technology at an educational issue; users need to know what they are doing to make governance effective.
-
-## Looking Forward
-
-The landscape of M365 governance continues to evolve. With features like Copilot emerging, user understanding becomes even more critical. However, the fundamental principle remains the same: start with education, support with automation, and build a community around best practices.
