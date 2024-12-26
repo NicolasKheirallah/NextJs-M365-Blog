@@ -4,7 +4,7 @@ title: Why I Chose Education Over Technology for M365 Governance
 description: Exploring the pivotal role of education in effective M365 governance, emphasizing user training, empowerment, cost savings, and the strategic use of SharePoint, Teams, and Viva Engage.
 tags: ['Microsoft 365', 'Teams', 'Viva Engage', 'SharePoint', 'Governance', 'Education']
 summary: Discover why investing in user education is more effective than relying solely on technology for M365 governance. Learn how practical training, user empowerment, and strategic tool usage can save costs and enhance governance practices.
-authors: ['Default']
+authors: ['default']
 ---
 
 # Why I Chose Education Over Technology for M365 Governance (A Consultant's Journey)
