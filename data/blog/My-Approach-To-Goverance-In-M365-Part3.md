@@ -1,98 +1,117 @@
 ---
 date: '2024-08-05T20:10:31.726Z'
-title: Technical Implementation of Microsoft 365 Governance - Part 3
-description: A deep dive into the technical implementation of governance in Microsoft 365, focusing on identity and access management, data governance, compliance management, security management, and lifecycle management.
-tags: ['Microsoft 365', 'SharePoint']
-summary: A deep dive into the technical implementation of governance in Microsoft 365, focusing on identity and access management, data governance, compliance management, security management, and lifecycle management.
+title: My Approach to Governance in M365 - Part 3
+description: Exploring how to measure the effectiveness of Microsoft 365 governance efforts, focusing on adoption, compliance, and ROI.
+tags: ['Microsoft 365', 'Governance', 'Metrics', 'ROI', 'Compliance']
+summary: Learn how to evaluate the success of Microsoft 365 governance initiatives by tracking adoption, compliance metrics, and return on investment.
 authors: ['default']
 ---
 
-### Introduction
+# My Approach to Governance in M365 - Part 3
 
-In the previous parts of this series, we covered the basics of Microsoft 365 governance and advanced strategies for automation and regular audits. In this final installment, we'll take a deep dive into the technical implementation of governance in Microsoft 365, focusing on key areas such as identity and access management, data governance, compliance management, security management, and lifecycle management.
+In the first two parts of this series, we covered the importance of education and automation in Microsoft 365 (M365) governance. Now, we’ll focus on a critical question: how do you measure the success of your governance efforts? Knowing what’s working (and what isn’t) is key to proving value and ensuring continuous improvement.
 
-### Key Components of Microsoft 365 Governance
+## Why Metrics Matter
 
-#### 1. Identity and Access Management
+Governance is an ongoing journey, not a one-time project. Metrics help you:
 
-Identity and access management (IAM) is the foundation of Microsoft 365 governance. It involves controlling who has access to what resources and ensuring that only authorized users can access sensitive information. Key features include:
+- **Validate Success:** Prove the effectiveness of your governance strategies.
+- **Identify Weaknesses:** Pinpoint areas needing refinement or additional focus.
+- **Demonstrate ROI:** Show stakeholders the tangible value of your efforts.
+- **Guide Future Actions:** Inform decisions on scaling and iterating governance practices.
 
-- **Azure Active Directory (Azure AD):** A centralized identity management platform that provides single sign-on, multi-factor authentication, and conditional access policies.
-- **Role-Based Access Control (RBAC):** Assign permissions to users based on their roles, ensuring that users have the minimum necessary access to perform their duties.
+The challenge lies in choosing the right metrics that provide actionable insights rather than just numbers.
 
-#### 2. Data Governance
+## Key Metrics for Governance Success
 
-Data governance focuses on managing the lifecycle of data, from creation to deletion, ensuring its integrity, security, and compliance with regulations. Key features include:
+### 1. Adoption Metrics
 
-- **Information Protection:** Classify, label, and protect sensitive information using tools like Microsoft Information Protection (MIP).
-- **Data Loss Prevention (DLP):** Policies that prevent unauthorized sharing of sensitive information.
-- **Retention Policies:** Ensure that data is retained for the required period to meet regulatory requirements and then securely deleted.
+User adoption is a strong indicator of governance effectiveness. Track:
 
-#### 3. Lifecycle Management
+- **Active Users:** How many employees actively use M365 tools such as Teams, SharePoint, or Viva Engage?
+- **Feature Adoption:** Are users leveraging governance-related features like sensitivity labels, templates, and automation tools?
+- **Training Completion Rates:** What percentage of users have completed governance education courses?
 
-Lifecycle management
+### 2. Compliance Metrics
 
-involves managing the creation, use, and disposal of digital resources. Key features include:
+Governance is often driven by compliance requirements. Measure:
 
-- **Teams Governance:** Policies for creating, managing, and archiving Microsoft Teams.
-- **Group Management:** Controls for the creation and management of Office 365 groups.
-- **Ownership:** Controls for the creation and management of Office 365 groups.
-- **Provisioning and De-provisioning:** Automate the process of onboarding and offboarding users to ensure timely access to resources.
+- **Policy Compliance Rates:** How many groups, teams, or sites comply with retention, sharing, and classification policies?
+- **Data Protection Success:** Track incidents of unauthorized access or data leaks—fewer is better.
+- **Access Reviews:** What percentage of groups have up-to-date permissions?
 
-### Script for Checking Ownership
+### 3. Efficiency Metrics
 
-Permisisons needed:
+Efficient governance saves time and resources. Monitor:
 
-- Group.Read.All,
-- Directory.Read.All
-- GroupMember.Read.All
+- **Time Saved:** Compare pre- and post-governance times for common tasks, like finding documents or sharing files.
+- **IT Workload Reduction:** Track decreases in support tickets related to governance.
+- **Automation Effectiveness:** Measure the success rates of automated processes, such as inactive group cleanups.
 
-```powershell
+### 4. Collaboration Metrics
 
-# Define the necessary variables
-$clientId = "your-client-id"
-$tenantId = "your-tenant-id"
-$clientSecret = "your-client-secret"
-$tokenEndpoint = "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token"
-$graphEndpoint = "https://graph.microsoft.com/v1.0"
+Governance should enhance collaboration, not hinder it. Evaluate:
 
-# Get the OAuth token
-$body = @{
-    client_id     = $clientId
-    scope         = "https://graph.microsoft.com/.default"
-    client_secret = $clientSecret
-    grant_type    = "client_credentials"
-}
+- **Team Utilization:** What percentage of Teams or SharePoint sites are actively used?
+- **Cross-Department Collaboration:** Are different departments using shared tools and resources effectively?
+- **User Satisfaction:** Conduct surveys to gauge how governance impacts collaboration.
 
-$response = Invoke-RestMethod -Method Post -Uri $tokenEndpoint -ContentType "application/x-www-form-urlencoded" -Body $body
-$accessToken = $response.access_token
+## Building Your Governance Dashboard
 
-# Get all groups
-$groups = Invoke-RestMethod -Method Get -Uri "$graphEndpoint/groups" -Headers @{ Authorization = "Bearer $accessToken" }
+A governance dashboard consolidates your metrics into a clear, actionable format. Here’s how to create one:
 
-# Initialize an array to hold groups with less than two owners
-$groupsWithLessThanTwoOwners = @()
+### 1. Identify Your Audience
 
-foreach ($group in $groups.value) {
-    $owners = Invoke-RestMethod -Method Get -Uri "$graphEndpoint/groups/$($group.id)/owners" -Headers @{ Authorization = "Bearer $accessToken" }
+Tailor your dashboard to stakeholders’ needs:
 
-    if ($owners.value.Count -lt 2) {
-        $groupsWithLessThanTwoOwners += $group
-    }
-}
+- **Executives:** Focus on ROI, risk reduction, and strategic alignment.
+- **IT Teams:** Highlight automation effectiveness, compliance, and workload impacts.
+- **Users:** Showcase improvements in collaboration and ease of use.
 
-# Output the groups with less than two owners
-$groupsWithLessThanTwoOwners | ForEach-Object {
-    [PSCustomObject]@{
-        GroupId   = $_.id
-        GroupName = $_.displayName
-        Owners    = (Invoke-RestMethod -Method Get -Uri "$graphEndpoint/groups/$($_.id)/owners" -Headers @{ Authorization = "Bearer $accessToken" }).value
-    }
-} | Format-Table -Property GroupId, GroupName, Owners
+### 2. Choose Visualization Tools
 
+Microsoft tools like Power BI integrate seamlessly with M365, allowing you to:
 
-```
+- Create real-time dashboards.
+- Automate data collection from Teams, SharePoint, and Azure.
+- Generate visualizations that highlight key trends.
 
-### Conclusion
+### 3. Focus on Storytelling
 
-Implementing technical components for governance in Microsoft 365 is essential for creating a secure, compliant, and efficient digital environment. By focusing on identity and access management, data governance, compliance management, security management, and lifecycle management, organizations can build a robust governance framework. Stay proactive about governance to mitigate risks and drive organizational success.
+Numbers alone don’t inspire action. Use your dashboard to tell a story:
+
+- Show progress over time.
+- Highlight successes and areas of improvement.
+- Use real-world examples to make metrics relatable.
+
+## Success Stories: Metrics in Action
+
+### Case 1: Adoption Metrics Drive ROI
+
+A client’s M365 adoption rates increased by 40% after implementing governance education and automation. This translated to:
+
+- **Improved Productivity:** Reduced duplicate efforts saved 2 hours per user per week.
+- **Reduced Costs:** Eliminated the need for third-party tools, saving $250,000 annually.
+
+### Case 2: Compliance Metrics Prevent Fines
+
+For a financial services firm, tracking compliance metrics ensured:
+
+- **100% Policy Adherence:** All sensitive documents were classified and protected.
+- **Avoided Penalties:** Proactive compliance measures prevented a $500,000 fine.
+
+## Iterating Based on Metrics
+
+Governance isn’t static. Use your metrics to:
+
+- **Refine Policies:** Address areas of non-compliance with targeted training or automation.
+- **Expand Automation:** Identify additional manual processes that can be automated.
+- **Enhance User Training:** Focus on the tools or concepts users struggle with most.
+
+## What’s Next?
+
+In Part 4, we’ll explore how to build a culture of governance within your organization. From engaging stakeholders to turning users into governance advocates, we’ll cover the human side of making governance stick.
+
+_Pro Tip: Keep a running list of success stories tied to your metrics. These are invaluable when presenting to stakeholders or justifying future governance investments._
+
+Questions about measuring governance success? Share them in the comments! And don’t forget to subscribe for Part 4 of this series.

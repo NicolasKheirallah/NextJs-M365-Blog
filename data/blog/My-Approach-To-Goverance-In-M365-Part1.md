@@ -1,71 +1,95 @@
 ---
-date: '2024-07-25T20:10:01.726Z'
-title: My Approach to Governance in Microsoft 365 - Part 1
-description: Understanding the basics of governance in Microsoft 365, its importance, and best practices for defining and implementing it.!
-tags: ['Viva Connections', 'SharePoint']
-summary: Understanding the basics of governance in Microsoft 365, its importance, and best practices for defining and implementing it.!
+date: '2024-08-05T20:10:31.726Z'
+title: My Approach to Governance in M365 - Part 1
+description: Exploring the foundational principles of effective governance in Microsoft 365, focusing on the importance of user education, role clarity, and the strategic use of tools.
+tags: ['Microsoft 365', 'Governance', 'Teams', 'SharePoint', 'Viva Engage']
+summary: A comprehensive look at the foundational principles of Microsoft 365 governance, emphasizing education, clear policies, and practical strategies for success.
 authors: ['default']
 ---
 
-### Introduction
+# My Approach to Governance in M365 - Part 1
 
-In today's digital landscape, Microsoft 365 has become an indispensable tool for organizations aiming to boost productivity and enhance collaboration. However, this extensive reliance on cloud services brings significant responsibility. Ensuring security, compliance, and efficient use of digital resources is crucial, and that's where governance in Microsoft 365 comes into play. As a consultant, I frequently encounter these challenges, so I decided to write a series on my approach to handling them, with a particular focus on the employee experience side, including SharePoint, Teams, and Viva Connections.
+Microsoft 365 (M365) is a powerful suite of tools that enables collaboration, communication, and productivity. However, without effective governance, it can quickly spiral into chaos. Over the years, I’ve learned that successful governance isn’t about imposing strict rules or relying solely on technology—it’s about empowering users with the knowledge and tools they need to make informed decisions.
 
-### What is Governance in Microsoft 365?
+## Why Governance Matters
 
-Governance in Microsoft 365 involves a comprehensive set of policies, procedures, and controls designed to manage and protect digital resources effectively. This includes managing user access, ensuring data protection, maintaining regulatory compliance, and optimizing resource use to enhance productivity. Effective governance helps organizations mitigate risks, protect sensitive information, and align their Microsoft 365 environment with business objectives. It also improves cost control, facilitates information retrieval, and boosts productivity. Implementing robust governance is crucial for both organic platform growth and utilizing tools like Copilot effectively.
+Governance in M365 is about more than compliance and security. It’s about:
 
-### Best Practices for Microsoft 365 Governance
+- **Streamlining Collaboration:** Ensuring teams have the right tools and structure to work effectively.
+- **Protecting Data:** Preventing accidental data loss or unauthorized access.
+- **Optimizing Resources:** Avoiding redundant Teams, SharePoint sites, and Viva Engage communities.
+- **Empowering Users:** Giving people the confidence to use M365 tools correctly.
 
-Governance in Microsoft 365 involves detailed technical measures designed to manage and control digital assets effectively. This includes establishing and enforcing security policies, ensuring compliance with regulatory requirements, and maintaining operational efficiency.
+The challenge? Balancing these goals without overwhelming users or IT teams.
 
-#### Define Clear Policies
+## The Traditional Governance Pitfalls
 
-Establishing and publishing clear governance policies is the first step. These policies should be easily accessible and understandable for all users to ensure they know what is permitted and what is not. Key areas include:
+Many organizations default to overly restrictive policies or costly third-party solutions to manage M365 governance. Common issues include:
 
-- **Acceptable Use Policies:** Outline what users can and cannot do with the organization's digital resources.
-- **Data Classification Guidelines:** Provide a framework for categorizing data based on sensitivity and importance.
-- **Compliance Requirements:** Ensure all activities comply with relevant legal and regulatory standards.
+- **Restricting M365 Group Creation:** Blocking users from creating Teams or SharePoint sites often leads to frustration and shadow IT.
+- **Over-Reliance on Technology:** Expensive SaaS governance tools promise automation but fail to address the root cause of issues: user behavior and understanding.
+- **Complex Processes:** Lengthy approval workflows and unclear policies discourage adoption and create bottlenecks.
+- **Neglecting Standardization:** Inconsistent naming conventions, site structures, and access policies result in confusion and inefficiency.
 
-**Examples of Policies:**
+Governance shouldn’t feel like a burden. It should enhance productivity while ensuring compliance and security.
 
-1. **Access Control Policies:**
+## A Better Approach: Education First
 
-   - **Multi-Factor Authentication (MFA):** Require MFA for all users to enhance security.
-   - **Conditional Access Policies:** Implement rules that grant or block access based on conditions like user location, device state, and risk level.
-   - **Role-Based Access Control (RBAC):** Define and enforce roles to ensure users have only the necessary access to perform their duties.
+I’ve found that the most effective governance strategies prioritize education and user empowerment. Here’s how I approach it:
 
-2. **Data Protection Policies:**
+### 1. Educate Users Before They Act
 
-   - **Data Classification:** Establish guidelines for classifying data based on sensitivity levels (e.g., public, internal, confidential, highly confidential).
-   - **Data Encryption:** Require encryption for data at rest and in transit to protect sensitive information.
-   - **Information Rights Management (IRM):** Apply policies to restrict access to documents and emails, preventing unauthorized sharing and usage.
+Before users can create an M365 Group, Team, or SharePoint site, they complete a short, interactive course. This isn’t your typical compliance training. Instead, it focuses on real-world scenarios:
 
-3. **Data Loss Prevention (DLP) Policies:**
+- **When to Use Teams, SharePoint, or Viva Engage:** Clarifying the purpose of each tool helps users choose the right platform for their needs.
+- **Why Governance Matters:** Explaining the risks of data breaches and the benefits of structured collaboration.
+- **Best Practices:** Tips for naming conventions, access management, and data classification.
 
-   - **Sensitive Information Types:** Define policies to detect and prevent sharing of sensitive information such as social security numbers, credit card information, and health records.
-   - **Email and Document Scanning:** Implement DLP rules to scan outgoing emails and shared documents for sensitive data, blocking or warning users when a policy violation is detected.
+At the end of the course, users complete a short quiz. Passing the quiz unlocks their ability to create new groups or sites, ensuring they understand the basics before taking action.
 
-4. **Compliance Policies:**
+### 2. Provide Templates for Success
 
-   - **Retention Policies:** Specify how long different types of data must be retained to comply with legal and regulatory requirements.
-   - **Audit Logging:** Enable and configure audit logs to track user and admin activities, ensuring accountability and facilitating compliance audits.
-   - **eDiscovery Policies:** Establish procedures for data retrieval and legal holds to support litigation and compliance investigations.
+To simplify setup and promote consistency, I provide predefined templates for common use cases:
 
-5. **Operational Efficiency Policies:**
+- **Project Teams:** Includes channels for planning, execution, and reporting.
+- **Departmental Sites:** Structured to facilitate document sharing, announcements, and collaboration.
+- **Event Communities:** Tailored for managing event logistics and post-event follow-up.
 
-   - **Lifecycle Management:** Define policies for the creation, usage, and archiving of resources such as Microsoft Teams, SharePoint sites, and Office 365 groups.
+Templates save time and reduce the risk of misconfiguration while ensuring alignment with organizational standards.
 
-6. **User Training and Awareness Policies:**
+### 3. Rethink Naming Conventions
 
-   - **Regular Training:** Conduct mandatory training sessions for users on security best practices, data protection, and compliance requirements.
-   - **Phishing Simulations:** Implement periodic phishing simulations to test user awareness and readiness to handle potential threats.
-   - **Policy Acknowledgment:** Require users to acknowledge understanding and acceptance of key policies during onboarding and at regular intervals.
+While naming conventions have traditionally been a cornerstone of governance, I believe they are no longer essential. With advancements in search capabilities and metadata tagging, there are better ways to organize and locate resources. Instead of focusing on rigid naming rules, I advocate for:
 
-7. **Collaboration and Sharing Policies:**
-   - **External Sharing:** Define rules for sharing documents and resources with external parties, including permissions and access expiration.
-   - **Guest Access:** Implement policies for managing guest access to Microsoft 365 environments, ensuring that external users have appropriate and limited access.
+- **Smart Metadata:** Leveraging labels and tags to provide context and aid discoverability.
+- **Search Optimization:** Ensuring users can quickly find what they need through intuitive search functions.
+- **Guided Structures:** Providing templates and default settings that naturally align with organizational needs.
 
-### Conclusion
+This approach reduces the cognitive load on users while maintaining order and efficiency.
 
-Effective governance in Microsoft 365 is essential for protecting data, ensuring compliance, and optimizing resource use. In the next part of this series, we'll explore more advanced topics like automating governance processes and conducting regular audits. Stay tuned!
+### 4. Automate Cleanup Processes
+
+Governance isn’t a set-it-and-forget-it task. Automation plays a key role in keeping environments tidy:
+
+- **Inactive Group Notifications:** Owners are alerted after six months of inactivity, prompting them to archive or delete the group.
+- **Automated Archiving:** Groups without owner responses are automatically archived after 30 days.
+- **Access Reviews:** Periodic prompts for group owners to review and confirm permissions.
+
+These processes prevent sprawl and reduce the burden on IT.
+
+## Why This Works
+
+This approach addresses the root cause of governance issues: a lack of understanding. By focusing on education and empowerment, organizations can:
+
+- Reduce support tickets and IT intervention.
+- Minimize shadow IT by making governance easy and intuitive.
+- Save costs by avoiding expensive third-party tools.
+- Foster a culture of accountability and collaboration.
+
+## What’s Next?
+
+In the next part of this series, I’ll dive deeper into the role of automation in M365 governance. We’ll explore how to streamline workflows, enforce policies, and keep environments clean without micromanaging users.
+
+_Pro Tip: Start small. Pick one governance pain point, like naming conventions or inactive groups, and build your education and automation processes around it. Once you see results, expand to other areas._
+
+Questions or insights about M365 governance? Share them in the comments! And don’t forget to subscribe for Part 2 of this series.
