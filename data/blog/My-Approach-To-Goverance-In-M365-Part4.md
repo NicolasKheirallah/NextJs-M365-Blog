@@ -1,5 +1,5 @@
 ---
-date: '2024-08-05T20:10:31.726Z'
+date: '2024-08-15T20:10:31.726Z'
 title: My Approach to Governance in M365 - Part 4
 description: Building a culture of governance in Microsoft 365 by engaging stakeholders, empowering users, and fostering accountability.
 tags: ['Microsoft 365', 'Governance', 'User Engagement', 'Culture']

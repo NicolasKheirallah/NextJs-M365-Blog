@@ -1,5 +1,5 @@
 ---
-date: '2024-08-05T20:10:31.726Z'
+date: '2024-07-25T20:10:31.726Z'
 title: My Approach to Governance in M365 - Part 1
 description: Exploring the foundational principles of effective governance in Microsoft 365, focusing on the importance of user education, role clarity, and the strategic use of tools.
 tags: ['Microsoft 365', 'Governance', 'Teams', 'SharePoint', 'Viva Engage']

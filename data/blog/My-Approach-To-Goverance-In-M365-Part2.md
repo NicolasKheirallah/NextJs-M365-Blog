@@ -1,5 +1,5 @@
 ---
-date: '2024-08-05T20:10:31.726Z'
+date: '2024-07-28T20:10:31.726Z'
 title: My Approach to Governance in M365 - Part 2
 description: Delving into the role of automation in effective Microsoft 365 governance, focusing on streamlining workflows and maintaining a clean, secure environment.
 tags: ['Microsoft 365', 'Governance', 'Automation', 'Teams', 'SharePoint']
