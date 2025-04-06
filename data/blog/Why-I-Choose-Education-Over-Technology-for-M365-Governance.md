@@ -28,7 +28,7 @@ I realized that throwing technology at these educational issues was not the answ
 
 Instead of recommending another expensive tool, I proposed something radical: invest in education for the users. Not just basic training, but comprehensive, practical education about why governance matters and how to implement it effectively within the M365 ecosystem. So they understand what they are doing
 
-The CFO was skeptical. "You want us to spend money on training instead of a governance solution?"
+The CTO and other people in the project was skeptical,  as they came from an old IT organisation background. "You want us to spend money on training instead of a governance solution?"
 
 "Yes," I replied, "because governance without understanding is just expensive restriction."
 
