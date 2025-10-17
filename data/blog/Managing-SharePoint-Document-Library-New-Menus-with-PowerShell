@@ -1,0 +1,276 @@
+---
+date: '2025-10-17T00:15:20.000Z'
+title: Managing SharePoint Document Library New Menus with PowerShell
+description: Automate and customize SharePoint document library New menus at scale using PowerShell, handling the critical ListContentTypeId vs ContentTypeId distinction.
+tags: ['SharePoint', 'PowerShell', 'Automation', 'Content Types', 'PnP']
+summary: Learn how to programmatically manage and customize the New menu in SharePoint document libraries using PowerShell, ensuring consistency across your organization.
+authors: ['default']
+---
+
+# Managing SharePoint Document Library New Menus with PowerShell
+
+## The Problem
+
+SharePoint document libraries usually their default option when adding a custom content type, and most organsation user want to use a template but sometimes they dont.
+This is where PowerShell automation comes in.
+
+## Understanding the New Menu Architecture
+
+When you look at a SharePoint library's New menu, you see options like:
+- Folder
+- Word document
+- Excel workbook
+- PowerPoint presentation
+- OneNote notebook
+- Visio drawing
+- Link
+- Your custom content types
+
+Internally, SharePoint stores these in a property called `NewDocumentTemplates` on the default view of the library. This property contains a JSON-formatted string that defines which items appear and whether they're visible.
+
+### The Hidden Complexity: ListContentTypeId vs ContentTypeId
+
+Here's where things get tricky. When you add a site content type to a list, SharePoint creates a **local copy** of that content type. This local copy has a different ID than the original site content type.
+
+For example:
+- **Site Content Type ID**: `0x0101007ADED896313A4943AFE7F07133B1339E`
+- **List Content Type ID**: `0x0101007ADED896313A4943AFE7F07133B1339E001` (notice the `001` suffix)
+
+When configuring the New menu, you **must use the ListContentTypeId**, not the site ContentTypeId. This is why scripts exported from PnP sometimes don't work when applied to different lists—the IDs don't match!
+
+## The Solution: A Robust PowerShell Script
+
+Rather than manual configuration, we can use PowerShell to:
+
+1. Connect to any SharePoint site
+2. Retrieve all content types assigned to a library
+3. Build the correct JSON structure with ListContentTypeIds
+4. Apply visibility rules
+5. Update the default view
+
+Here's what a well-designed script looks like:
+
+```powershell
+Set-ListNewMenu -Url 'https://tenant.sharepoint.com/sites/demo' `
+  -ListTitle 'Documents' `
+  -ContentTypesToHide 'OneNote notebook','PowerPoint presentation'
+```
+
+## Common Use Cases
+
+### 1. Hide Unwanted Microsoft Templates
+
+Many organizations don't use OneNote or Visio integration. Hide them to keep the menu clean:
+
+```powershell
+Set-ListNewMenu -Url $SiteUrl -ListTitle 'Documents' `
+  -ContentTypesToHide 'OneNote notebook','Visio drawing','Forms for Excel'
+```
+
+### 2. Show Only Custom Content Types
+
+For specialized libraries, hide all defaults and show only your custom content types:
+
+```powershell
+Set-ListNewMenu -Url $SiteUrl -ListTitle 'Contracts' `
+  -HideDefaults `
+  -ContentTypesToShow 'Contract','Legal Agreement','NDA'
+```
+
+### 3. Keep Office Apps but Hide Folder Creation
+
+If you want to streamline document creation but prevent folder clutter:
+
+```powershell
+Set-ListNewMenu -Url $SiteUrl -ListTitle 'Documents' `
+  -ContentTypesToHide 'Folder'
+```
+
+### 4. Preview Before Applying
+
+Use `-WhatIf` to see exactly what will change without committing:
+
+```powershell
+Set-ListNewMenu -Url $SiteUrl -ListTitle 'Documents' `
+  -HideDefaults -WhatIf
+```
+
+
+
+
+
+
+# The Script
+```powershell
+<#
+.SYNOPSIS
+Manages the New Menu on SharePoint document libraries.
+
+.DESCRIPTION
+Configures which content types and default items appear in a document library's New Menu.
+Automatically includes all list content types and allows selective hiding.
+
+.PARAMETER Url
+The SharePoint site URL containing the library.
+
+.PARAMETER ListTitle
+The name of the document library to configure.
+
+.PARAMETER ContentTypesToHide
+Array of content type names to hide from the New Menu.
+
+.PARAMETER HideDefaults
+Switch to hide all default Microsoft templates (Word, Excel, PowerPoint, OneNote, Visio, Forms).
+Folder and Link will remain visible unless specified in ContentTypesToHide.
+
+.EXAMPLE
+Hide specific content types
+Set-ListNewMenu -Url 'https://tenant.sharepoint.com/sites/demo' -ListTitle 'Documents' `
+  -ContentTypesToHide 'OneNote notebook','PowerPoint presentation'
+
+.EXAMPLE
+Hide all defaults, show only custom content types
+Set-ListNewMenu -Url 'https://tenant.sharepoint.com/sites/demo' -ListTitle 'Documents' `
+  -HideDefaults
+
+.EXAMPLE
+Hide defaults but keep Word and Excel visible
+Set-ListNewMenu -Url 'https://tenant.sharepoint.com/sites/demo' -ListTitle 'Documents' `
+  -HideDefaults -ContentTypesToShow 'Word document','Excel workbook'
+
+#>
+
+[CmdletBinding(SupportsShouldProcess)]
+param(
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [string]$Url,
+    
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [string]$ListTitle,
+    
+    [Parameter()]
+    [string[]]$ContentTypesToHide,
+    
+    [Parameter()]
+    [string[]]$ContentTypesToShow,
+    
+    [Parameter()]
+    [switch]$HideDefaults
+)
+
+# Define default Microsoft menu items
+$DefaultMenuItems = @{
+    'Folder' = @{ templateId = 'NewFolder'; isContentType = $false }
+    'Word document' = @{ templateId = 'NewDOC'; isContentType = $false }
+    'Excel workbook' = @{ templateId = 'NewXSL'; isContentType = $false }
+    'PowerPoint presentation' = @{ templateId = 'NewPPT'; isContentType = $false }
+    'OneNote notebook' = @{ templateId = 'NewONE'; isContentType = $false }
+    'Visio drawing' = @{ templateId = 'NewVSDX'; isContentType = $false }
+    'Forms for Excel' = @{ templateId = 'NewXSLForm'; isContentType = $false }
+    'Link' = @{ templateId = 'Link'; isContentType = $false }
+}
+
+$DefaultMicrosoftTemplates = @('Word document', 'Excel workbook', 'PowerPoint presentation', 'OneNote notebook', 'Visio drawing', 'Forms for Excel')
+
+try {
+    # Connect to SharePoint
+    Write-Verbose "Connecting to $Url"
+    Connect-PnPOnline -Url $Url -Interactive -ErrorAction Stop
+    
+    # Get list and content types
+    $list = Get-PnPList -Identity $ListTitle -ErrorAction Stop
+    $listContentTypes = Get-PnPContentType -List $list
+    $defaultView = Get-PnPView -List $list | Where-Object { $_.DefaultView -eq $true }
+    
+    if (!$defaultView) {
+        throw "No default view found for list '$ListTitle'"
+    }
+    
+    Write-Host "✓ Connected to site: $Url" -ForegroundColor Green
+    Write-Host "✓ List: $($list.Title)" -ForegroundColor Green
+    
+    # Build menu items collection
+    $menuItems = @()
+    
+    # Add default Microsoft items
+    foreach ($item in $DefaultMenuItems.GetEnumerator()) {
+        $menuItems += @{
+            title = $item.Key
+            templateId = $item.Value.templateId
+            visible = $true
+        }
+    }
+    
+    # Add list content types
+    foreach ($ct in $listContentTypes) {
+        if ($ct.Name -ne 'Folder') {  # Skip Folder, already in defaults
+            $menuItems += @{
+                title = $ct.Name
+                templateId = $ct.StringId
+                contentTypeId = $ct.StringId
+                isContentType = $true
+                visible = $true
+            }
+        }
+    }
+    
+    Write-Host "`nProcessing menu visibility..." -ForegroundColor Cyan
+    
+    # Hide defaults if requested
+    if ($HideDefaults) {
+        Write-Verbose "Hiding all default Microsoft templates"
+        foreach ($item in $menuItems) {
+            if ($item.title -in $DefaultMicrosoftTemplates) {
+                $item.visible = $false
+            }
+        }
+    }
+    
+    # Hide specific content types
+    if ($ContentTypesToHide) {
+        foreach ($hideItem in $ContentTypesToHide) {
+            $item = $menuItems | Where-Object { $_.title -eq $hideItem }
+            if ($item) {
+                $item.visible = $false
+                Write-Host "  → Hiding: $hideItem" -ForegroundColor Yellow
+            } else {
+                Write-Host "  ⚠ Not found: $hideItem" -ForegroundColor Yellow
+            }
+        }
+    }
+    
+    # Show specific content types
+    if ($ContentTypesToShow) {
+        foreach ($showItem in $ContentTypesToShow) {
+            $item = $menuItems | Where-Object { $_.title -eq $showItem }
+            if ($item) {
+                $item.visible = $true
+                Write-Host "  → Showing: $showItem" -ForegroundColor Green
+            } else {
+                Write-Host "  ⚠ Not found: $showItem" -ForegroundColor Yellow
+            }
+        }
+    }
+    
+    # Display summary
+    Write-Host "`nFinal New Menu Configuration:" -ForegroundColor Cyan
+    $menuItems | ForEach-Object {
+        $status = if ($_.visible) { "✓" } else { "✗" }
+        $type = if ($_.isContentType) { "[CT]" } else { "[MS]" }
+        Write-Host "  $status $type $($_.title)"
+    }
+    
+    # Update the view
+    if ($PSCmdlet.ShouldProcess("$($list.Title)", "Update NewDocumentTemplates")) {
+        $defaultView.NewDocumentTemplates = $menuItems | ConvertTo-Json -Compress
+        $defaultView.Update()
+        Invoke-PnPQuery
+        Write-Host "`n✓ Successfully updated New Menu" -ForegroundColor Green
+    }
+}
+catch {
+    Write-Error "Error: $($_.Exception.Message)"
+    exit 1
+}```
