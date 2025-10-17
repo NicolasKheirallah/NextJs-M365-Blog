@@ -148,6 +148,10 @@ param(
     
     [Parameter(Mandatory)]
     [ValidateNotNullOrEmpty()]
+    [string]$ClientId,
+
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
     [string]$ListTitle,
     
     [Parameter()]
@@ -177,7 +181,7 @@ $DefaultMicrosoftTemplates = @('Word document', 'Excel workbook', 'PowerPoint pr
 try {
     # Connect to SharePoint
     Write-Verbose "Connecting to $Url"
-    Connect-PnPOnline -Url $Url -Interactive -ErrorAction Stop
+    Connect-PnPOnline -Url $Url -Interactive -ErrorAction Stop -ClientId $ClientId
     
     # Get list and content types
     $list = Get-PnPList -Identity $ListTitle -ErrorAction Stop
@@ -273,4 +277,5 @@ try {
 catch {
     Write-Error "Error: $($_.Exception.Message)"
     exit 1
-}```
+}
+```
